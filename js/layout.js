@@ -25,6 +25,7 @@
         { href: "tienda.html?categoria=zueco-trabajo", txt: "Zuecos de trabajo" },
       ],
     },
+    { href: "contacto.html", txt: "Contacto" },
     { href: "nosotros.html", txt: "Sobre nosotros" },
   ];
 
