@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tienda · Calzados Ricardo</title>
-  <meta name="description" content="Catálogo completo de Calzados Ricardo: zapatillas, botas, vestir, sandalias y más para hombre, mujer y niño. Filtra por talla, marca y precio.">
+  <title>Productos · Calzados Ricardo</title>
+  <meta name="description" content="Catálogo de Calzados Ricardo: calzado confort, para pies anchos y juanetes, apto para plantillas ortopédicas, zuecos de trabajo, vestir y casa. Filtra por ancho, cierre, talla y marca.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,8 +16,8 @@
 
   <div class="encabezado-pagina">
     <div class="contenedor">
-      <h1 id="listado-titulo">Toda la tienda</h1>
-      <p>Calzado de marca para toda la familia. Todos los precios con impuestos incluidos.</p>
+      <h1 id="listado-titulo">Todos los productos</h1>
+      <p>Calzado confort, para pies anchos, apto para plantillas y zuecos de trabajo. Filtra por ancho, cierre y talla. Precios con impuestos incluidos.</p>
     </div>
   </div>
 
@@ -36,8 +36,16 @@
               <div class="filtros__opcs" data-grupo="genero"></div>
             </div>
             <div class="filtros__grupo">
-              <h4>Tipo</h4>
+              <h4>Tipo de calzado</h4>
               <div class="filtros__opcs" data-grupo="categoria"></div>
+            </div>
+            <div class="filtros__grupo">
+              <h4>Ancho / horma</h4>
+              <div class="filtros__opcs" data-grupo="ancho"></div>
+            </div>
+            <div class="filtros__grupo">
+              <h4>Cierre</h4>
+              <div class="filtros__opcs" data-grupo="cierre"></div>
             </div>
             <div class="filtros__grupo">
               <h4>Marca</h4>
@@ -50,8 +58,9 @@
             <div class="filtros__grupo">
               <div class="campo"><label for="f-pmax">Precio máximo (€)</label>
                 <input id="f-pmax" name="precioMax" type="number" min="0" step="5" placeholder="Sin límite"></div>
-              <label style="display:flex;gap:.5rem;font-size:.9rem;margin-top:.7rem"><input type="checkbox" name="soloRebajas"> Solo rebajas</label>
+              <label style="display:flex;gap:.5rem;font-size:.9rem;margin-top:.7rem"><input type="checkbox" name="aptoPlantillas"> Apto para plantillas ortopédicas</label>
               <label style="display:flex;gap:.5rem;font-size:.9rem;margin-top:.4rem"><input type="checkbox" name="soloNovedades"> Solo novedades</label>
+              <label style="display:flex;gap:.5rem;font-size:.9rem;margin-top:.4rem"><input type="checkbox" name="soloDisponibles"> Solo con stock</label>
             </div>
             <button class="btn btn--linea btn--bloque" type="button" id="btn-limpiar" style="margin-top:.6rem">Limpiar filtros</button>
           </form>

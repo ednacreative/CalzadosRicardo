@@ -53,15 +53,6 @@ window.CR = (function () {
   }
 
   function precioHTML(p) {
-    if (p.en_rebaja && p.precio_antes) {
-      return (
-        '<span class="precio-rebaja"><strong>' +
-        eur(p.precio) +
-        '</strong></span> <span class="antes">' +
-        eur(p.precio_antes) +
-        "</span>"
-      );
-    }
     return "<strong>" + eur(p.precio) + "</strong>";
   }
 
@@ -83,12 +74,24 @@ window.CR = (function () {
         if (!p.stock || !p.stock[c.talla] || p.stock[c.talla] <= 0) return false;
       }
       if (c.precioMax && p.precio > Number(c.precioMax)) return false;
-      if (c.soloRebajas && !p.en_rebaja) return false;
+      if (c.ancho && p.ancho !== c.ancho) return false;
+      if (c.cierre && p.cierre !== c.cierre) return false;
+      if (c.aptoPlantillas && !p.apto_plantillas) return false;
       if (c.soloNovedades && !p.novedad) return false;
       if (c.soloDisponibles && !p.disponible) return false;
       if (c.texto) {
         var q = c.texto.toLowerCase();
-        var heno = (p.nombre + " " + p.marca + " " + p.categoria + " " + p.referencia).toLowerCase();
+        var heno = (
+          p.nombre +
+          " " +
+          p.marca +
+          " " +
+          p.categoria +
+          " " +
+          (p.categoria_etiqueta || "") +
+          " " +
+          p.referencia
+        ).toLowerCase();
         if (heno.indexOf(q) === -1) return false;
       }
       return true;
@@ -144,8 +147,12 @@ window.CR = (function () {
   function tarjeta(p) {
     var flags = "";
     if (!p.disponible) flags += '<span class="flag flag--agotado">Agotado</span>';
-    else if (p.en_rebaja) flags += '<span class="flag flag--rebaja">Rebaja</span>';
     else if (p.novedad) flags += '<span class="flag flag--novedad">Novedad</span>';
+    if (p.ancho && p.ancho !== "Normal")
+      flags +=
+        '<span class="flag flag--ancho">' +
+        (p.ancho.indexOf("Extra") !== -1 ? "Extra ancho" : "Ancho especial") +
+        "</span>";
 
     var swatches = (p.colores || [])
       .slice(0, 4)

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contacto · Calzados Ricardo</title>
-  <meta name="description" content="Contacta con Calzados Ricardo: dudas de talla, estado de un pedido o cualquier consulta. Tienda en Calle de Alfonso I, 18, Zaragoza.">
+  <meta name="description" content="Contacta con Calzados Ricardo: dudas de talla o ancho, estado de un pedido o cualquier consulta. Tienda en el Coso 109, Zaragoza.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
   <header data-cabecera></header>
 
   <div class="encabezado-pagina">
-    <div class="contenedor"><h1>Contacto</h1><p>Dudas de talla, estado de un pedido o cualquier consulta. Respondemos el mismo día laborable.</p></div>
+    <div class="contenedor"><h1>Contacto</h1><p>Dudas de talla o de ancho, estado de un pedido o cualquier consulta. Respondemos el mismo día laborable.</p></div>
   </div>
 
   <main class="seccion">
@@ -47,12 +47,16 @@
         <span class="antetitulo">La tienda</span>
         <h2>Dónde estamos</h2>
         <p>
-          Calle de Alfonso I, 18<br>
-          50003 Zaragoza<br><br>
-          <strong>Teléfono / WhatsApp:</strong> <a href="tel:+34976000000">976 000 000</a><br>
-          <strong>Email:</strong> <a href="mailto:hola@calzadosricardo.es">hola@calzadosricardo.es</a><br><br>
+          Coso 109<br>
+          50001 Zaragoza<br>
+          <span class="texto-apoyo">Cerca de Plaza España y del Pilar</span><br><br>
+          <strong>Teléfono:</strong> <a href="tel:+34876011809">876 011 809</a><br>
+          <strong>WhatsApp (solo pedidos):</strong> <a href="https://wa.me/34656429687">656 429 687</a><br>
+          <strong>Email:</strong> <a href="mailto:hola@calzadosricardo.es">hola@calzadosricardo.es</a><br>
+          <strong>Instagram:</strong> <a href="https://instagram.com/calzados.ricardo">@calzados.ricardo</a><br><br>
           <strong>Horario:</strong><br>
-          Lunes a sábado: 10:00–20:30<br>
+          Lunes a viernes: 10:30–13:30 y 17:30–20:30<br>
+          Sábados: 10:30–13:30<br>
           Domingos: cerrado
         </p>
         <div id="mapa-tienda" style="height:300px;border-radius:var(--radio);overflow:hidden;border:1px solid var(--gris-200);margin-top:1rem"></div>
@@ -99,16 +103,16 @@
           .catch(function (e2) {
             fin();
             err.innerHTML = "<strong>No se ha podido enviar.</strong><br>" + (e2 && e2.message ? e2.message + "<br>" : "") +
-              'Escríbenos a <a href="mailto:hola@calzadosricardo.es">hola@calzadosricardo.es</a> o al 976 000 000.';
+              'Escríbenos a <a href="mailto:hola@calzadosricardo.es">hola@calzadosricardo.es</a> o al 876 011 809.';
             err.classList.remove("oculto");
           });
       });
       if (typeof L !== "undefined") {
         var el = document.getElementById("mapa-tienda");
         if (el) {
-          var m = L.map(el, { scrollWheelZoom: false }).setView([41.6522, -0.8797], 16);
+          var m = L.map(el, { scrollWheelZoom: false }).setView([41.6503, -0.8792], 16);
           L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "&copy; OpenStreetMap", maxZoom: 19 }).addTo(m);
-          L.marker([41.6522, -0.8797]).addTo(m).bindPopup("Calzados Ricardo<br>Calle de Alfonso I, 18");
+          L.marker([41.6503, -0.8792]).addTo(m).bindPopup("Calzados Ricardo<br>Coso 109, Zaragoza");
         }
       }
     })();

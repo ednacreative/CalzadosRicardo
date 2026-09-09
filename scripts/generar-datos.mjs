@@ -1,12 +1,16 @@
 /**
- * Generador del catálogo de productos ficticios de Calzados Ricardo.
+ * Generador del catálogo ficticio de Calzados Ricardo.
+ *
+ * Calzados Ricardo (Zaragoza, desde 1925) está especializada en CALZADO
+ * ESPECIAL: confort, pies anchos y juanetes, apto para plantillas
+ * ortopédicas, zuecos de trabajo (sanitario / hostelería), calzado de
+ * vestir y calzado de casa.
  *
  * Uso:  node scripts/generar-datos.mjs
  * Salida: data/productos.json  y  data/productos.js (window.CR_DB)
  *
- * Todo es inventado: marcas, modelos, precios y stock. Las imágenes son
- * placeholders de Unsplash (pool FOTOS más abajo). Sustituye el pool —o el
- * JSON directamente— por el catálogo real cuando toque.
+ * Datos y marcas inventados. Imágenes: placeholders de Unsplash (pool
+ * FOTOS), con respaldo a picsum.photos si alguna falla.
  */
 
 import { writeFileSync, mkdirSync } from "node:fs";
@@ -35,91 +39,130 @@ const round2 = (n) => Math.round(n * 100) / 100;
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 
 /* ---------- Catálogos ---------- */
-const MARCAS = ["Ricardo", "Vento", "Kestrel", "Maresía", "Nordwalk", "Pisa 21", "Lumen"];
+const MARCAS = ["Ricardo", "Doria", "Anatómic", "PieLibre", "Sanícalz", "Duvalí", "Confortan"];
 
-const FAMILIAS = {
-  hombre: [
-    { categoria: "zapato de vestir", peso: 0.18, base: [70, 140], tallas: [39, 46] },
-    { categoria: "zapatillas", peso: 0.28, base: [45, 110], tallas: [39, 46] },
-    { categoria: "botas", peso: 0.16, base: [80, 160], tallas: [39, 46] },
-    { categoria: "mocasines", peso: 0.12, base: [60, 120], tallas: [39, 46] },
-    { categoria: "náuticos", peso: 0.1, base: [55, 95], tallas: [39, 46] },
-    { categoria: "casual", peso: 0.16, base: [40, 85], tallas: [39, 46] },
-  ],
-  mujer: [
-    { categoria: "zapatillas", peso: 0.3, base: [45, 115], tallas: [35, 42] },
-    { categoria: "botines", peso: 0.2, base: [65, 140], tallas: [35, 42] },
-    { categoria: "sandalias", peso: 0.16, base: [35, 90], tallas: [35, 42] },
-    { categoria: "bailarinas", peso: 0.12, base: [40, 85], tallas: [35, 42] },
-    { categoria: "botas", peso: 0.12, base: [80, 170], tallas: [35, 42] },
-    { categoria: "tacón", peso: 0.1, base: [55, 120], tallas: [35, 42] },
-  ],
-  niño: [
-    { categoria: "zapatillas", peso: 0.5, base: [30, 65], tallas: [28, 38] },
-    { categoria: "deportivo", peso: 0.25, base: [32, 60], tallas: [28, 38] },
-    { categoria: "botas", peso: 0.15, base: [38, 70], tallas: [28, 38] },
-    { categoria: "sandalias", peso: 0.1, base: [22, 45], tallas: [24, 34] },
-  ],
-};
+// familia: { categoria (slug), etiqueta, peso, generos, precio, tallas, cierres }
+const FAMILIAS = [
+  {
+    categoria: "confort",
+    etiqueta: "Zapato confort",
+    peso: 0.24,
+    generos: ["hombre", "mujer"],
+    precio: [55, 130],
+    cierres: ["Velcro", "Cordones", "Elástico", "Sin cierre"],
+  },
+  {
+    categoria: "pies-anchos",
+    etiqueta: "Zapato para pies anchos",
+    peso: 0.18,
+    generos: ["hombre", "mujer"],
+    precio: [60, 140],
+    cierres: ["Velcro", "Cordones", "Elástico"],
+  },
+  {
+    categoria: "vestir",
+    etiqueta: "Zapato de vestir",
+    peso: 0.14,
+    generos: ["hombre", "mujer"],
+    precio: [70, 155],
+    cierres: ["Cordones", "Hebilla", "Sin cierre"],
+  },
+  {
+    categoria: "zueco-trabajo",
+    etiqueta: "Zueco de trabajo",
+    peso: 0.14,
+    generos: ["unisex"],
+    precio: [30, 75],
+    cierres: ["Sin cierre", "Correa trasera"],
+  },
+  {
+    categoria: "casa",
+    etiqueta: "Zapatilla de casa",
+    peso: 0.1,
+    generos: ["hombre", "mujer"],
+    precio: [22, 48],
+    cierres: ["Sin cierre", "Velcro"],
+  },
+  {
+    categoria: "botin-confort",
+    etiqueta: "Botín confort",
+    peso: 0.09,
+    generos: ["hombre", "mujer"],
+    precio: [75, 160],
+    cierres: ["Cremallera", "Cordones", "Elástico"],
+  },
+  {
+    categoria: "sandalia-anatomica",
+    etiqueta: "Sandalia anatómica",
+    peso: 0.07,
+    generos: ["hombre", "mujer"],
+    precio: [35, 95],
+    cierres: ["Hebilla", "Velcro"],
+  },
+  {
+    categoria: "deportivo-confort",
+    etiqueta: "Deportivo de paseo",
+    peso: 0.04,
+    generos: ["hombre", "mujer", "unisex"],
+    precio: [50, 110],
+    cierres: ["Cordones", "Velcro", "Elástico"],
+  },
+];
+
+const ANCHOS = [
+  { v: "Normal", peso: 0.4 },
+  { v: "Ancho especial (F)", peso: 0.4 },
+  { v: "Extra ancho (H)", peso: 0.2 },
+];
 
 const COLORES = [
   { nombre: "Negro", hex: "#1a1a1a" },
-  { nombre: "Blanco", hex: "#f2f2ef" },
   { nombre: "Marrón", hex: "#6b4a2b" },
   { nombre: "Cuero", hex: "#b5854f" },
   { nombre: "Azul marino", hex: "#20304a" },
   { nombre: "Gris", hex: "#8a8f96" },
   { nombre: "Beige", hex: "#c9b79c" },
-  { nombre: "Verde oliva", hex: "#5b5f43" },
   { nombre: "Burdeos", hex: "#5c2233" },
-  { nombre: "Rojo", hex: "#b12a2a" },
+  { nombre: "Blanco", hex: "#f2f2ef" },
+  { nombre: "Camel", hex: "#a9793f" },
 ];
 
 const MATERIALES = [
   "Piel flor",
   "Serraje",
   "Nobuk",
-  "Ante",
   "Piel grabada",
-  "Malla técnica",
-  "Lona",
+  "Piel lavable",
+  "Textil elástico",
+  "Neopreno",
   "Piel vegana",
-  "Textil reciclado",
+  "EVA inyectada",
 ];
 
 const NOMBRES = {
-  "zapato de vestir": ["Oxford", "Derby", "Blucher", "Monkstrap", "Cordón liso"],
-  zapatillas: ["Runner", "Court", "Retro", "Urban", "Trail", "Knit", "Classic 80"],
-  botas: ["Chelsea", "Chukka", "Trekking", "Militar", "Biker", "Serraje alta"],
-  botines: ["Chelsea", "Tacón ancho", "Cowboy", "Track", "Elástico", "Plataforma"],
-  mocasines: ["Penny", "Antifaz", "Borlas", "Náutico premium"],
-  náuticos: ["Clásico", "Dos ojales", "Cordón náutico"],
-  casual: ["Blucher casual", "Sneaker piel", "Zapato confort", "Slip-on"],
-  sandalias: ["Tira ancha", "Cangrejera", "Pala cruzada", "Menorquina", "Cuña esparto"],
-  bailarinas: ["Punta redonda", "Lazo", "Destalonada", "Manoletina"],
-  tacón: ["Salón", "Destalonado", "Pulsera", "Kitten heel"],
-  deportivo: ["Velcro run", "Luces", "Fútbol sala", "Escolar deportivo"],
+  confort: ["cordón elástico", "velcro doble", "sin costuras", "empeine alto", "ligero", "extensible"],
+  "pies-anchos": ["horma extra ancha", "para juanetes", "empeine regulable", "velcro adaptable", "sin puntera rígida"],
+  vestir: ["cordón liso", "hebilla", "blucher", "salón forrado", "cosido a mano"],
+  "zueco-trabajo": ["sanitario", "antideslizante SRC", "hostelería", "cerrado", "ventilado", "autoclavable"],
+  casa: ["cerrada de estar por casa", "abierta con talón", "botín de casa", "con suela reforzada", "de rizo"],
+  "botin-confort": ["con cremallera", "elásticos laterales", "forro cálido", "impermeable", "acordonado"],
+  "sandalia-anatomica": ["dos tiras", "pala cruzada", "con puntera cerrada", "de dedo", "cuña anatómica"],
+  "deportivo-confort": ["ultraligero", "para caminar", "plantilla memory", "malla transpirable", "sin cordones"],
 };
 
-/* ---------- Imágenes (pool de Unsplash, verificar antes de usar) ---------- */
+/* ---------- Imágenes (pool de Unsplash verificado) ---------- */
 const FOTOS = [
-  "1542291026-7eec264c27ff",
-  "1600185365483-26d7a4cc7519",
-  "1595950653106-6c9ebd614d3a",
-  "1608231387042-66d1773070a5",
-  "1549298916-b41d501d3772",
-  "1600269452121-4f2416e55c28",
-  "1584735175315-9d5df23860e6",
-  "1491553895911-0055eca6402d",
-  "1465479423260-c4afc24172c6",
+  "1449505278894-297fdb3edbc1",
+  "1533867617858-e7b97e060509",
+  "1531310197839-ccf54634509e",
+  "1582897085656-c636d006a246",
+  "1560343090-f0409e92791a",
   "1520639888713-7851133b1ed0",
-  "1560769629-975ec94e6a86",
-  "1520256862855-398228c41684",
-  "1543163521-1bf539c55dd2",
+  "1549298916-b41d501d3772",
+  "1603487742131-4160ec999306",
+  "1543508282-6319a3e2621f",
+  "1491553895911-0055eca6402d",
   "1525966222134-fcfa99b8ae77",
-  "1595341888016-a392ef81b7de",
-  "1605348532760-6753d2c43329",
-  "1552346154-21d32810aba3",
 ];
 
 function hashCadena(s) {
@@ -144,61 +187,94 @@ function fotosDe(id, n) {
   return pool.slice(0, n).map(urlFoto);
 }
 
-/* ---------- Generación ---------- */
-function familiaPonderada(genero) {
-  const fam = FAMILIAS[genero];
-  const total = fam.reduce((s, f) => s + f.peso, 0);
+/* ---------- Ponderaciones ---------- */
+function ponderado(arr, campoPeso) {
+  const total = arr.reduce((s, x) => s + x[campoPeso], 0);
   let r = rand() * total;
-  for (const f of fam) if ((r -= f.peso) <= 0) return f;
-  return fam[0];
+  for (const x of arr) if ((r -= x[campoPeso]) <= 0) return x;
+  return arr[0];
 }
 
+function tallasPara(genero) {
+  if (genero === "hombre") return rango(39, 47);
+  if (genero === "mujer") return rango(35, 43);
+  if (genero === "niño") return rango(24, 34);
+  return rango(36, 46); // unisex
+}
+function rango(a, b) {
+  const r = [];
+  for (let i = a; i <= b; i++) r.push(i);
+  return r;
+}
+
+/* ---------- Generación ---------- */
 const TOTAL = 40;
 const productos = [];
 
 for (let i = 1; i <= TOTAL; i++) {
   const id = `CR-${String(i).padStart(4, "0")}`;
-  const genero = pick(["hombre", "hombre", "mujer", "mujer", "mujer", "niño"]);
-  const fam = familiaPonderada(genero);
+  const fam = ponderado(FAMILIAS, "peso");
+  const genero = pick(fam.generos);
   const marca = pick(MARCAS);
-  const modelo = pick(NOMBRES[fam.categoria] || ["Modelo"]);
+  const detalle = pick(NOMBRES[fam.categoria]);
+  const ancho = fam.categoria === "pies-anchos" ? pick(["Ancho especial (F)", "Extra ancho (H)"]) : ponderado(ANCHOS, "peso").v;
+  const cierre = pick(fam.cierres);
+  const material = pick(MATERIALES);
 
-  const precio = round2(between(fam.base[0], fam.base[1]) * (marca === "Ricardo" ? 0.92 : 1));
-  const enRebaja = chance(0.22);
-  const precioAntes = enRebaja ? round2(precio * between(1.2, 1.55)) : null;
+  const precio = round2(between(fam.precio[0], fam.precio[1]) * (marca === "Ricardo" ? 0.93 : 1));
 
-  // Tallas y stock
-  const [tMin, tMax] = fam.tallas;
-  const tallas = [];
-  for (let t = tMin; t <= tMax; t++) tallas.push(t);
+  const tallas = tallasPara(genero);
   const stock = {};
   tallas.forEach((t) => {
-    stock[t] = chance(0.16) ? 0 : intBetween(1, 12);
+    stock[t] = chance(0.14) ? 0 : intBetween(1, 10);
   });
 
-  // Colores
   const nColores = intBetween(1, 3);
   const colores = [...COLORES]
     .sort(() => rand() - 0.5)
     .slice(0, nColores)
     .map((c) => ({ nombre: c.nombre, hex: c.hex }));
 
-  const material = pick(MATERIALES);
-  const imagenes = fotosDe(id, intBetween(3, 5));
+  const plantillaExtraible = chance(0.7);
+  const aptoPlantillas = plantillaExtraible ? chance(0.85) : chance(0.2);
+  const sinCosturas = fam.categoria === "confort" || fam.categoria === "pies-anchos" ? chance(0.6) : chance(0.15);
 
-  const caracteristicas = [
-    `Corte de ${material.toLowerCase()}`,
-    pick(["Suela de goma antideslizante", "Suela EVA ligera", "Suela de cuero con antideslizante", "Suela track"]),
-    pick(["Plantilla acolchada extraíble", "Plantilla de látex", "Plantilla transpirable"]),
-    pick(["Forro textil", "Forro de piel", "Forro sin costuras"]),
+  const imagenes = fotosDe(id, intBetween(3, 4));
+
+  var titulo = fam.etiqueta + " " + detalle;
+  titulo = titulo.charAt(0).toUpperCase() + titulo.slice(1);
+
+  const caract = [
+    "Corte de " + material.toLowerCase(),
+    plantillaExtraible ? "Plantilla extraíble" : "Plantilla fija acolchada",
+    aptoPlantillas ? "Apto para plantillas ortopédicas" : "Plantilla anatómica de serie",
+    "Piso flexible y ligero",
+    "Cierre: " + cierre.toLowerCase(),
   ];
-  if (fam.categoria === "zapatillas" || fam.categoria === "deportivo")
-    caracteristicas.push("Cierre de cordones", "Refuerzo en talón");
-  if (fam.categoria === "botas" || fam.categoria === "botines")
-    caracteristicas.push(chance(0.5) ? "Cierre con cremallera interior" : "Elásticos laterales");
+  if (ancho !== "Normal") caract.push("Horma de " + ancho.toLowerCase());
+  if (sinCosturas) caract.push("Interior sin costuras");
+  if (fam.categoria === "zueco-trabajo") caract.push("Suela antideslizante certificada SRC", "Fácil de limpiar");
+  if (fam.categoria === "botin-confort") caract.push("Caña acolchada");
+  if (fam.categoria === "sandalia-anatomica") caract.push("Lecho plantar anatómico");
 
-  const nombre = `${modelo} ${fam.categoria === "zapatillas" ? "" : ""}`.trim();
-  const titulo = `${cap(fam.categoria)} ${modelo}`.replace("  ", " ");
+  const descripcion =
+    titulo +
+    " de " +
+    marca +
+    ". " +
+    (fam.categoria === "pies-anchos"
+      ? "Diseñado para pies anchos, juanetes y dedos en garra: sin costuras que rocen y con empeine que se adapta. "
+      : fam.categoria === "zueco-trabajo"
+      ? "Pensado para estar de pie muchas horas: ligero, antideslizante y fácil de limpiar. "
+      : fam.categoria === "casa"
+      ? "Para estar cómodo en casa sin renunciar a la sujeción. "
+      : "Comodidad desde el primer día, sin periodo de adaptación. ") +
+    (aptoPlantillas ? "Admite tu plantilla ortopédica retirando la de serie. " : "") +
+    "Horma " +
+    ancho.toLowerCase() +
+    ". Disponible en " +
+    colores.map((c) => c.nombre.toLowerCase()).join(", ") +
+    ". Si dudas con la talla o el ancho, escríbenos antes de pedir.";
 
   const p = {
     id,
@@ -207,23 +283,23 @@ for (let i = 1; i <= TOTAL; i++) {
     marca,
     genero,
     categoria: fam.categoria,
+    categoria_etiqueta: fam.etiqueta,
     precio,
-    precio_antes: precioAntes,
-    en_rebaja: enRebaja,
+    precio_texto: precio.toLocaleString("es-ES", { minimumFractionDigits: 2 }) + " €",
     destacado: chance(0.25),
     novedad: chance(0.3),
+    ancho,
+    cierre,
+    plantilla_extraible: plantillaExtraible,
+    apto_plantillas: aptoPlantillas,
+    sin_costuras: sinCosturas,
+    material,
     colores,
     tallas,
     stock,
     disponible: Object.values(stock).some((n) => n > 0),
-    material,
-    descripcion:
-      `${titulo} de ${marca}. ${cap(material)} de primera calidad para un uso ` +
-      `${genero === "niño" ? "diario en el cole y el recreo" : "diario con buen acabado"}. ` +
-      `Horma ${pick(["estándar", "ancha", "cómoda"])}; si dudas entre dos tallas, ` +
-      `te recomendamos ${pick(["la más grande", "tu talla habitual"])}. ` +
-      `Disponible en ${colores.map((c) => c.nombre.toLowerCase()).join(", ")}.`,
-    caracteristicas,
+    descripcion,
+    caracteristicas: caract,
     imagenes,
     imagen_principal: imagenes[0],
     fecha: new Date(2026, intBetween(0, 8), intBetween(1, 28)).toISOString().slice(0, 10),
@@ -242,11 +318,17 @@ const salida = {
   tienda: {
     nombre: "Calzados Ricardo",
     ciudad: "Zaragoza",
+    fundada: 1925,
+    direccion: "Coso 109, 50001 Zaragoza",
+    telefono: "876 011 809",
+    whatsapp: "+34 656 429 687",
+    instagram: "@calzados.ricardo",
     email_pedidos: "edna.creativestudio@gmail.com",
     envio_gratis_desde: 60,
     coste_envio: 3.95,
   },
   marcas: MARCAS,
+  categorias: FAMILIAS.map((f) => ({ slug: f.categoria, etiqueta: f.etiqueta })),
   total: productos.length,
   productos,
 };
@@ -264,9 +346,11 @@ writeFileSync(
 );
 
 const porGenero = productos.reduce((a, p) => ((a[p.genero] = (a[p.genero] || 0) + 1), a), {});
+const porCat = productos.reduce((a, p) => ((a[p.categoria] = (a[p.categoria] || 0) + 1), a), {});
 console.log(
-  `OK  ${productos.length} productos -> data/productos.json + data/productos.js\n` +
-    `    ${JSON.stringify(porGenero)}\n` +
-    `    ${productos.filter((p) => p.en_rebaja).length} en rebaja · ` +
-    `${productos.filter((p) => p.novedad).length} novedades`
+  "OK  " + productos.length + " productos -> data/productos.json + data/productos.js\n" +
+    "    géneros: " + JSON.stringify(porGenero) + "\n" +
+    "    categorías: " + JSON.stringify(porCat) + "\n" +
+    "    " + productos.filter((p) => p.ancho !== "Normal").length + " de ancho especial · " +
+    productos.filter((p) => p.apto_plantillas).length + " aptos para plantillas"
 );

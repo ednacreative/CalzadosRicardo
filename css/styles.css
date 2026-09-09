@@ -263,6 +263,53 @@ p {
   background: var(--terracota);
 }
 
+/* Menú desplegable "Productos" */
+.nav__item {
+  position: relative;
+}
+
+.nav__caret {
+  font-size: 0.7rem;
+}
+
+.nav__sub {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #fff;
+  border: 1px solid var(--gris-200);
+  border-radius: var(--radio-sm);
+  box-shadow: var(--sombra-md);
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0.15s;
+  z-index: 950;
+}
+
+.nav__item:hover .nav__sub,
+.nav__item:focus-within .nav__sub {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav__sub a {
+  padding: 0.55rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.nav__sub a:hover {
+  background: var(--crema);
+}
+
 .cabecera__acciones {
   display: flex;
   align-items: center;
@@ -375,9 +422,34 @@ p {
     transform: translateY(0);
   }
 
-  .nav a {
+  .nav > a,
+  .nav__item > a {
     padding: 0.9rem 0.25rem;
     border-bottom: 1px solid var(--gris-200);
+    display: block;
+  }
+
+  .nav__sub {
+    position: static;
+    opacity: 1;
+    visibility: hidden;
+    transform: none;
+    box-shadow: none;
+    border: 0;
+    padding: 0 0 0 0.8rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease, visibility 0.2s;
+  }
+
+  .nav__item.desplegado .nav__sub {
+    visibility: visible;
+    max-height: 520px;
+  }
+
+  .nav__item.desplegado .nav__caret {
+    transform: rotate(180deg);
+    display: inline-block;
   }
 }
 
@@ -552,6 +624,10 @@ p {
 
 .flag--agotado {
   background: var(--gris-500);
+}
+
+.flag--ancho {
+  background: #35617e;
 }
 
 .fav-btn {
@@ -860,6 +936,31 @@ p {
   align-items: baseline;
   gap: 0.7rem;
   margin-bottom: 1.3rem;
+}
+
+.ficha__specs {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1rem;
+  border-top: 1px solid var(--gris-200);
+  border-bottom: 1px solid var(--gris-200);
+  padding: 0.9rem 0;
+}
+
+.ficha__specs li {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.ficha__specs span {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gris-500);
 }
 
 .ficha__precio strong {

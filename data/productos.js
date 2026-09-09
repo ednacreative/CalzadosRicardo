@@ -1,2364 +1,156 @@
 /* Generado por scripts/generar-datos.mjs — no editar a mano. */
 window.CR_DB = {
-  "generado": "2026-09-09T09:31:29.311Z",
+  "generado": "2026-09-09T09:58:14.470Z",
   "fuente": "datos ficticios — generar-datos.mjs",
   "tienda": {
     "nombre": "Calzados Ricardo",
     "ciudad": "Zaragoza",
+    "fundada": 1925,
+    "direccion": "Coso 109, 50001 Zaragoza",
+    "telefono": "876 011 809",
+    "whatsapp": "+34 656 429 687",
+    "instagram": "@calzados.ricardo",
     "email_pedidos": "edna.creativestudio@gmail.com",
     "envio_gratis_desde": 60,
     "coste_envio": 3.95
   },
   "marcas": [
     "Ricardo",
-    "Vento",
-    "Kestrel",
-    "Maresía",
-    "Nordwalk",
-    "Pisa 21",
-    "Lumen"
+    "Doria",
+    "Anatómic",
+    "PieLibre",
+    "Sanícalz",
+    "Duvalí",
+    "Confortan"
+  ],
+  "categorias": [
+    {
+      "slug": "confort",
+      "etiqueta": "Zapato confort"
+    },
+    {
+      "slug": "pies-anchos",
+      "etiqueta": "Zapato para pies anchos"
+    },
+    {
+      "slug": "vestir",
+      "etiqueta": "Zapato de vestir"
+    },
+    {
+      "slug": "zueco-trabajo",
+      "etiqueta": "Zueco de trabajo"
+    },
+    {
+      "slug": "casa",
+      "etiqueta": "Zapatilla de casa"
+    },
+    {
+      "slug": "botin-confort",
+      "etiqueta": "Botín confort"
+    },
+    {
+      "slug": "sandalia-anatomica",
+      "etiqueta": "Sandalia anatómica"
+    },
+    {
+      "slug": "deportivo-confort",
+      "etiqueta": "Deportivo de paseo"
+    }
   ],
   "total": 40,
   "productos": [
     {
-      "id": "CR-0030",
-      "referencia": "CR-0030",
-      "nombre": "Zapatillas Urban",
-      "marca": "Kestrel",
-      "genero": "hombre",
-      "categoria": "zapatillas",
-      "precio": 45.43,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": true,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Burdeos",
-          "hex": "#5c2233"
-        },
-        {
-          "nombre": "Marrón",
-          "hex": "#6b4a2b"
-        },
-        {
-          "nombre": "Blanco",
-          "hex": "#f2f2ef"
-        }
-      ],
-      "tallas": [
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46
-      ],
-      "stock": {
-        "39": 0,
-        "40": 12,
-        "41": 1,
-        "42": 4,
-        "43": 10,
-        "44": 6,
-        "45": 12,
-        "46": 0
-      },
-      "disponible": true,
-      "material": "Malla técnica",
-      "descripcion": "Zapatillas Urban de Kestrel. Malla técnica de primera calidad para un uso diario con buen acabado. Horma cómoda; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en burdeos, marrón, blanco.",
-      "caracteristicas": [
-        "Corte de malla técnica",
-        "Suela de cuero con antideslizante",
-        "Plantilla transpirable",
-        "Forro textil",
-        "Cierre de cordones",
-        "Refuerzo en talón"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1520256862855-398228c41684?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-09-15"
-    },
-    {
-      "id": "CR-0027",
-      "referencia": "CR-0027",
-      "nombre": "Zapatillas Knit",
-      "marca": "Pisa 21",
-      "genero": "hombre",
-      "categoria": "zapatillas",
-      "precio": 67.11,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": true,
-      "novedad": true,
-      "colores": [
-        {
-          "nombre": "Marrón",
-          "hex": "#6b4a2b"
-        },
-        {
-          "nombre": "Cuero",
-          "hex": "#b5854f"
-        },
-        {
-          "nombre": "Verde oliva",
-          "hex": "#5b5f43"
-        }
-      ],
-      "tallas": [
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46
-      ],
-      "stock": {
-        "39": 12,
-        "40": 2,
-        "41": 0,
-        "42": 5,
-        "43": 0,
-        "44": 3,
-        "45": 10,
-        "46": 11
-      },
-      "disponible": true,
-      "material": "Serraje",
-      "descripcion": "Zapatillas Knit de Pisa 21. Serraje de primera calidad para un uso diario con buen acabado. Horma estándar; si dudas entre dos tallas, te recomendamos la más grande. Disponible en marrón, cuero, verde oliva.",
-      "caracteristicas": [
-        "Corte de serraje",
-        "Suela EVA ligera",
-        "Plantilla acolchada extraíble",
-        "Forro textil",
-        "Cierre de cordones",
-        "Refuerzo en talón"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-07-16"
-    },
-    {
-      "id": "CR-0035",
-      "referencia": "CR-0035",
-      "nombre": "Sandalias Cangrejera",
-      "marca": "Lumen",
-      "genero": "mujer",
-      "categoria": "sandalias",
-      "precio": 61.43,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": true,
-      "novedad": true,
-      "colores": [
-        {
-          "nombre": "Cuero",
-          "hex": "#b5854f"
-        },
-        {
-          "nombre": "Negro",
-          "hex": "#1a1a1a"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 6,
-        "36": 11,
-        "37": 4,
-        "38": 2,
-        "39": 4,
-        "40": 12,
-        "41": 0,
-        "42": 0
-      },
-      "disponible": true,
-      "material": "Lona",
-      "descripcion": "Sandalias Cangrejera de Lumen. Lona de primera calidad para un uso diario con buen acabado. Horma cómoda; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en cuero, negro.",
-      "caracteristicas": [
-        "Corte de lona",
-        "Suela de goma antideslizante",
-        "Plantilla de látex",
-        "Forro textil"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1465479423260-c4afc24172c6?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1465479423260-c4afc24172c6?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-05-11"
-    },
-    {
-      "id": "CR-0002",
-      "referencia": "CR-0002",
-      "nombre": "Zapatillas Classic 80",
-      "marca": "Vento",
-      "genero": "niño",
-      "categoria": "zapatillas",
-      "precio": 42.44,
-      "precio_antes": 56.05,
-      "en_rebaja": true,
-      "destacado": true,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Rojo",
-          "hex": "#b12a2a"
-        },
-        {
-          "nombre": "Negro",
-          "hex": "#1a1a1a"
-        }
-      ],
-      "tallas": [
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38
-      ],
-      "stock": {
-        "28": 9,
-        "29": 0,
-        "30": 4,
-        "31": 12,
-        "32": 4,
-        "33": 5,
-        "34": 3,
-        "35": 12,
-        "36": 8,
-        "37": 8,
-        "38": 3
-      },
-      "disponible": true,
-      "material": "Malla técnica",
-      "descripcion": "Zapatillas Classic 80 de Vento. Malla técnica de primera calidad para un uso diario en el cole y el recreo. Horma ancha; si dudas entre dos tallas, te recomendamos la más grande. Disponible en rojo, negro.",
-      "caracteristicas": [
-        "Corte de malla técnica",
-        "Suela de goma antideslizante",
-        "Plantilla acolchada extraíble",
-        "Forro de piel",
-        "Cierre de cordones",
-        "Refuerzo en talón"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1465479423260-c4afc24172c6?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-05-06"
-    },
-    {
-      "id": "CR-0011",
-      "referencia": "CR-0011",
-      "nombre": "Casual Blucher casual",
-      "marca": "Ricardo",
-      "genero": "hombre",
-      "categoria": "casual",
-      "precio": 56.53,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": true,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Negro",
-          "hex": "#1a1a1a"
-        }
-      ],
-      "tallas": [
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46
-      ],
-      "stock": {
-        "39": 9,
-        "40": 0,
-        "41": 1,
-        "42": 0,
-        "43": 12,
-        "44": 12,
-        "45": 0,
-        "46": 2
-      },
-      "disponible": true,
-      "material": "Lona",
-      "descripcion": "Casual Blucher casual de Ricardo. Lona de primera calidad para un uso diario con buen acabado. Horma cómoda; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en negro.",
-      "caracteristicas": [
-        "Corte de lona",
-        "Suela track",
-        "Plantilla transpirable",
-        "Forro textil"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-03-05"
-    },
-    {
-      "id": "CR-0034",
-      "referencia": "CR-0034",
-      "nombre": "Botines Tacón ancho",
-      "marca": "Vento",
-      "genero": "mujer",
-      "categoria": "botines",
-      "precio": 83.03,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": true,
-      "novedad": true,
-      "colores": [
-        {
-          "nombre": "Burdeos",
-          "hex": "#5c2233"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 11,
-        "36": 9,
-        "37": 8,
-        "38": 1,
-        "39": 0,
-        "40": 6,
-        "41": 9,
-        "42": 2
-      },
-      "disponible": true,
-      "material": "Lona",
-      "descripcion": "Botines Tacón ancho de Vento. Lona de primera calidad para un uso diario con buen acabado. Horma cómoda; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en burdeos.",
-      "caracteristicas": [
-        "Corte de lona",
-        "Suela de goma antideslizante",
-        "Plantilla transpirable",
-        "Forro de piel",
-        "Elásticos laterales"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1465479423260-c4afc24172c6?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-01-31"
-    },
-    {
-      "id": "CR-0004",
-      "referencia": "CR-0004",
-      "nombre": "Mocasines Náutico premium",
-      "marca": "Pisa 21",
-      "genero": "hombre",
-      "categoria": "mocasines",
-      "precio": 106.04,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": true,
-      "novedad": true,
-      "colores": [
-        {
-          "nombre": "Negro",
-          "hex": "#1a1a1a"
-        },
-        {
-          "nombre": "Beige",
-          "hex": "#c9b79c"
-        }
-      ],
-      "tallas": [
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46
-      ],
-      "stock": {
-        "39": 2,
-        "40": 2,
-        "41": 12,
-        "42": 0,
-        "43": 7,
-        "44": 0,
-        "45": 8,
-        "46": 3
-      },
-      "disponible": true,
-      "material": "Piel vegana",
-      "descripcion": "Mocasines Náutico premium de Pisa 21. Piel vegana de primera calidad para un uso diario con buen acabado. Horma cómoda; si dudas entre dos tallas, te recomendamos la más grande. Disponible en negro, beige.",
-      "caracteristicas": [
-        "Corte de piel vegana",
-        "Suela de goma antideslizante",
-        "Plantilla de látex",
-        "Forro de piel"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1465479423260-c4afc24172c6?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-01-15"
-    },
-    {
-      "id": "CR-0005",
-      "referencia": "CR-0005",
-      "nombre": "Zapatillas Court",
-      "marca": "Lumen",
-      "genero": "niño",
-      "categoria": "zapatillas",
-      "precio": 56.55,
-      "precio_antes": 80.94,
-      "en_rebaja": true,
-      "destacado": false,
-      "novedad": true,
-      "colores": [
-        {
-          "nombre": "Rojo",
-          "hex": "#b12a2a"
-        }
-      ],
-      "tallas": [
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38
-      ],
-      "stock": {
-        "28": 5,
-        "29": 9,
-        "30": 0,
-        "31": 2,
-        "32": 2,
-        "33": 8,
-        "34": 0,
-        "35": 4,
-        "36": 0,
-        "37": 1,
-        "38": 12
-      },
-      "disponible": true,
-      "material": "Serraje",
-      "descripcion": "Zapatillas Court de Lumen. Serraje de primera calidad para un uso diario en el cole y el recreo. Horma cómoda; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en rojo.",
-      "caracteristicas": [
-        "Corte de serraje",
-        "Suela de goma antideslizante",
-        "Plantilla transpirable",
-        "Forro textil",
-        "Cierre de cordones",
-        "Refuerzo en talón"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-09-27"
-    },
-    {
-      "id": "CR-0020",
-      "referencia": "CR-0020",
-      "nombre": "Bailarinas Destalonada",
-      "marca": "Ricardo",
-      "genero": "mujer",
-      "categoria": "bailarinas",
-      "precio": 38.06,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Negro",
-          "hex": "#1a1a1a"
-        },
-        {
-          "nombre": "Rojo",
-          "hex": "#b12a2a"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 8,
-        "36": 11,
-        "37": 5,
-        "38": 6,
-        "39": 3,
-        "40": 9,
-        "41": 0,
-        "42": 6
-      },
-      "disponible": true,
-      "material": "Piel flor",
-      "descripcion": "Bailarinas Destalonada de Ricardo. Piel flor de primera calidad para un uso diario con buen acabado. Horma cómoda; si dudas entre dos tallas, te recomendamos la más grande. Disponible en negro, rojo.",
-      "caracteristicas": [
-        "Corte de piel flor",
-        "Suela EVA ligera",
-        "Plantilla de látex",
-        "Forro textil"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1465479423260-c4afc24172c6?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-09-14"
-    },
-    {
-      "id": "CR-0039",
-      "referencia": "CR-0039",
-      "nombre": "Botas Chukka",
-      "marca": "Lumen",
-      "genero": "hombre",
-      "categoria": "botas",
-      "precio": 124.25,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Gris",
-          "hex": "#8a8f96"
-        },
-        {
-          "nombre": "Blanco",
-          "hex": "#f2f2ef"
-        }
-      ],
-      "tallas": [
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46
-      ],
-      "stock": {
-        "39": 7,
-        "40": 10,
-        "41": 1,
-        "42": 6,
-        "43": 9,
-        "44": 11,
-        "45": 10,
-        "46": 2
-      },
-      "disponible": true,
-      "material": "Piel flor",
-      "descripcion": "Botas Chukka de Lumen. Piel flor de primera calidad para un uso diario con buen acabado. Horma cómoda; si dudas entre dos tallas, te recomendamos la más grande. Disponible en gris, blanco.",
-      "caracteristicas": [
-        "Corte de piel flor",
-        "Suela EVA ligera",
-        "Plantilla de látex",
-        "Forro sin costuras",
-        "Elásticos laterales"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1465479423260-c4afc24172c6?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1465479423260-c4afc24172c6?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-09-13"
-    },
-    {
-      "id": "CR-0010",
-      "referencia": "CR-0010",
-      "nombre": "Zapatillas Trail",
-      "marca": "Nordwalk",
-      "genero": "niño",
-      "categoria": "zapatillas",
-      "precio": 39.8,
-      "precio_antes": 49.79,
-      "en_rebaja": true,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Marrón",
-          "hex": "#6b4a2b"
-        },
-        {
-          "nombre": "Blanco",
-          "hex": "#f2f2ef"
-        }
-      ],
-      "tallas": [
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38
-      ],
-      "stock": {
-        "28": 0,
-        "29": 7,
-        "30": 1,
-        "31": 0,
-        "32": 12,
-        "33": 8,
-        "34": 11,
-        "35": 5,
-        "36": 2,
-        "37": 0,
-        "38": 2
-      },
-      "disponible": true,
-      "material": "Ante",
-      "descripcion": "Zapatillas Trail de Nordwalk. Ante de primera calidad para un uso diario en el cole y el recreo. Horma estándar; si dudas entre dos tallas, te recomendamos la más grande. Disponible en marrón, blanco.",
-      "caracteristicas": [
-        "Corte de ante",
-        "Suela EVA ligera",
-        "Plantilla de látex",
-        "Forro sin costuras",
-        "Cierre de cordones",
-        "Refuerzo en talón"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-09-13"
-    },
-    {
-      "id": "CR-0036",
-      "referencia": "CR-0036",
-      "nombre": "Casual Slip-on",
-      "marca": "Vento",
-      "genero": "hombre",
-      "categoria": "casual",
-      "precio": 70.31,
-      "precio_antes": 100.87,
-      "en_rebaja": true,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Negro",
-          "hex": "#1a1a1a"
-        },
-        {
-          "nombre": "Blanco",
-          "hex": "#f2f2ef"
-        }
-      ],
-      "tallas": [
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46
-      ],
-      "stock": {
-        "39": 5,
-        "40": 7,
-        "41": 2,
-        "42": 2,
-        "43": 0,
-        "44": 8,
-        "45": 11,
-        "46": 6
-      },
-      "disponible": true,
-      "material": "Textil reciclado",
-      "descripcion": "Casual Slip-on de Vento. Textil reciclado de primera calidad para un uso diario con buen acabado. Horma estándar; si dudas entre dos tallas, te recomendamos la más grande. Disponible en negro, blanco.",
-      "caracteristicas": [
-        "Corte de textil reciclado",
-        "Suela de cuero con antideslizante",
-        "Plantilla de látex",
-        "Forro textil"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-09-03"
-    },
-    {
-      "id": "CR-0019",
-      "referencia": "CR-0019",
-      "nombre": "Sandalias Cangrejera",
-      "marca": "Nordwalk",
-      "genero": "mujer",
-      "categoria": "sandalias",
-      "precio": 72.06,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Beige",
-          "hex": "#c9b79c"
-        },
-        {
-          "nombre": "Cuero",
-          "hex": "#b5854f"
-        },
-        {
-          "nombre": "Marrón",
-          "hex": "#6b4a2b"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 3,
-        "36": 0,
-        "37": 2,
-        "38": 12,
-        "39": 6,
-        "40": 12,
-        "41": 11,
-        "42": 0
-      },
-      "disponible": true,
-      "material": "Malla técnica",
-      "descripcion": "Sandalias Cangrejera de Nordwalk. Malla técnica de primera calidad para un uso diario con buen acabado. Horma cómoda; si dudas entre dos tallas, te recomendamos la más grande. Disponible en beige, cuero, marrón.",
-      "caracteristicas": [
-        "Corte de malla técnica",
-        "Suela EVA ligera",
-        "Plantilla de látex",
-        "Forro textil"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-09-01"
-    },
-    {
-      "id": "CR-0040",
-      "referencia": "CR-0040",
-      "nombre": "Tacón Destalonado",
-      "marca": "Ricardo",
-      "genero": "mujer",
-      "categoria": "tacón",
-      "precio": 95.36,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Cuero",
-          "hex": "#b5854f"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 7,
-        "36": 9,
-        "37": 7,
-        "38": 2,
-        "39": 11,
-        "40": 3,
-        "41": 0,
-        "42": 4
-      },
-      "disponible": true,
-      "material": "Malla técnica",
-      "descripcion": "Tacón Destalonado de Ricardo. Malla técnica de primera calidad para un uso diario con buen acabado. Horma ancha; si dudas entre dos tallas, te recomendamos la más grande. Disponible en cuero.",
-      "caracteristicas": [
-        "Corte de malla técnica",
-        "Suela track",
-        "Plantilla acolchada extraíble",
-        "Forro de piel"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-08-21"
-    },
-    {
-      "id": "CR-0023",
-      "referencia": "CR-0023",
-      "nombre": "Zapatillas Court",
-      "marca": "Vento",
-      "genero": "mujer",
-      "categoria": "zapatillas",
-      "precio": 55.92,
-      "precio_antes": 71.62,
-      "en_rebaja": true,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Cuero",
-          "hex": "#b5854f"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 12,
-        "36": 10,
-        "37": 10,
-        "38": 10,
-        "39": 7,
-        "40": 6,
-        "41": 0,
-        "42": 4
-      },
-      "disponible": true,
-      "material": "Serraje",
-      "descripcion": "Zapatillas Court de Vento. Serraje de primera calidad para un uso diario con buen acabado. Horma ancha; si dudas entre dos tallas, te recomendamos la más grande. Disponible en cuero.",
-      "caracteristicas": [
-        "Corte de serraje",
-        "Suela EVA ligera",
-        "Plantilla de látex",
-        "Forro de piel",
-        "Cierre de cordones",
-        "Refuerzo en talón"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-08-19"
-    },
-    {
-      "id": "CR-0013",
-      "referencia": "CR-0013",
-      "nombre": "Sandalias Tira ancha",
-      "marca": "Ricardo",
-      "genero": "mujer",
-      "categoria": "sandalias",
-      "precio": 37,
-      "precio_antes": 48.25,
-      "en_rebaja": true,
-      "destacado": false,
-      "novedad": true,
-      "colores": [
-        {
-          "nombre": "Gris",
-          "hex": "#8a8f96"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 12,
-        "36": 9,
-        "37": 6,
-        "38": 10,
-        "39": 6,
-        "40": 10,
-        "41": 9,
-        "42": 9
-      },
-      "disponible": true,
-      "material": "Malla técnica",
-      "descripcion": "Sandalias Tira ancha de Ricardo. Malla técnica de primera calidad para un uso diario con buen acabado. Horma estándar; si dudas entre dos tallas, te recomendamos la más grande. Disponible en gris.",
-      "caracteristicas": [
-        "Corte de malla técnica",
-        "Suela EVA ligera",
-        "Plantilla de látex",
-        "Forro textil"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1465479423260-c4afc24172c6?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-08-16"
-    },
-    {
-      "id": "CR-0017",
-      "referencia": "CR-0017",
-      "nombre": "Sandalias Tira ancha",
-      "marca": "Kestrel",
-      "genero": "niño",
-      "categoria": "sandalias",
-      "precio": 22.6,
-      "precio_antes": 33.23,
-      "en_rebaja": true,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Azul marino",
-          "hex": "#20304a"
-        }
-      ],
-      "tallas": [
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34
-      ],
-      "stock": {
-        "24": 10,
-        "25": 4,
-        "26": 2,
-        "27": 0,
-        "28": 12,
-        "29": 9,
-        "30": 3,
-        "31": 6,
-        "32": 8,
-        "33": 7,
-        "34": 1
-      },
-      "disponible": true,
-      "material": "Piel flor",
-      "descripcion": "Sandalias Tira ancha de Kestrel. Piel flor de primera calidad para un uso diario en el cole y el recreo. Horma estándar; si dudas entre dos tallas, te recomendamos la más grande. Disponible en azul marino.",
-      "caracteristicas": [
-        "Corte de piel flor",
-        "Suela track",
-        "Plantilla acolchada extraíble",
-        "Forro sin costuras"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-08-09"
-    },
-    {
-      "id": "CR-0025",
-      "referencia": "CR-0025",
-      "nombre": "Botas Militar",
-      "marca": "Nordwalk",
-      "genero": "hombre",
-      "categoria": "botas",
-      "precio": 133.95,
-      "precio_antes": 194.21,
-      "en_rebaja": true,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Negro",
-          "hex": "#1a1a1a"
-        },
-        {
-          "nombre": "Rojo",
-          "hex": "#b12a2a"
-        },
-        {
-          "nombre": "Azul marino",
-          "hex": "#20304a"
-        }
-      ],
-      "tallas": [
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46
-      ],
-      "stock": {
-        "39": 6,
-        "40": 1,
-        "41": 11,
-        "42": 11,
-        "43": 0,
-        "44": 3,
-        "45": 10,
-        "46": 4
-      },
-      "disponible": true,
-      "material": "Piel flor",
-      "descripcion": "Botas Militar de Nordwalk. Piel flor de primera calidad para un uso diario con buen acabado. Horma ancha; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en negro, rojo, azul marino.",
-      "caracteristicas": [
-        "Corte de piel flor",
-        "Suela track",
-        "Plantilla de látex",
-        "Forro sin costuras",
-        "Cierre con cremallera interior"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-07-14"
-    },
-    {
-      "id": "CR-0031",
-      "referencia": "CR-0031",
-      "nombre": "Zapatillas Classic 80",
-      "marca": "Pisa 21",
-      "genero": "mujer",
-      "categoria": "zapatillas",
-      "precio": 112.21,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Negro",
-          "hex": "#1a1a1a"
-        },
-        {
-          "nombre": "Cuero",
-          "hex": "#b5854f"
-        },
-        {
-          "nombre": "Gris",
-          "hex": "#8a8f96"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 1,
-        "36": 9,
-        "37": 0,
-        "38": 5,
-        "39": 4,
-        "40": 0,
-        "41": 6,
-        "42": 0
-      },
-      "disponible": true,
-      "material": "Nobuk",
-      "descripcion": "Zapatillas Classic 80 de Pisa 21. Nobuk de primera calidad para un uso diario con buen acabado. Horma ancha; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en negro, cuero, gris.",
-      "caracteristicas": [
-        "Corte de nobuk",
-        "Suela EVA ligera",
-        "Plantilla transpirable",
-        "Forro de piel",
-        "Cierre de cordones",
-        "Refuerzo en talón"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-07-10"
-    },
-    {
-      "id": "CR-0018",
-      "referencia": "CR-0018",
-      "nombre": "Zapato de vestir Oxford",
-      "marca": "Nordwalk",
-      "genero": "hombre",
-      "categoria": "zapato de vestir",
-      "precio": 110.29,
-      "precio_antes": 164.71,
-      "en_rebaja": true,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Marrón",
-          "hex": "#6b4a2b"
-        }
-      ],
-      "tallas": [
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46
-      ],
-      "stock": {
-        "39": 11,
-        "40": 5,
-        "41": 11,
-        "42": 4,
-        "43": 6,
-        "44": 8,
-        "45": 4,
-        "46": 1
-      },
-      "disponible": true,
-      "material": "Piel grabada",
-      "descripcion": "Zapato de vestir Oxford de Nordwalk. Piel grabada de primera calidad para un uso diario con buen acabado. Horma cómoda; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en marrón.",
-      "caracteristicas": [
-        "Corte de piel grabada",
-        "Suela de cuero con antideslizante",
-        "Plantilla de látex",
-        "Forro sin costuras"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1520256862855-398228c41684?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-06-27"
-    },
-    {
-      "id": "CR-0008",
-      "referencia": "CR-0008",
-      "nombre": "Zapatillas Retro",
-      "marca": "Kestrel",
-      "genero": "mujer",
-      "categoria": "zapatillas",
-      "precio": 108.85,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Marrón",
-          "hex": "#6b4a2b"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 9,
-        "36": 0,
-        "37": 3,
-        "38": 5,
-        "39": 5,
-        "40": 10,
-        "41": 0,
-        "42": 12
-      },
-      "disponible": true,
-      "material": "Lona",
-      "descripcion": "Zapatillas Retro de Kestrel. Lona de primera calidad para un uso diario con buen acabado. Horma cómoda; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en marrón.",
-      "caracteristicas": [
-        "Corte de lona",
-        "Suela track",
-        "Plantilla transpirable",
-        "Forro de piel",
-        "Cierre de cordones",
-        "Refuerzo en talón"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-06-22"
-    },
-    {
-      "id": "CR-0038",
-      "referencia": "CR-0038",
-      "nombre": "Zapatillas Classic 80",
-      "marca": "Nordwalk",
-      "genero": "hombre",
-      "categoria": "zapatillas",
-      "precio": 70.03,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Azul marino",
-          "hex": "#20304a"
-        }
-      ],
-      "tallas": [
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46
-      ],
-      "stock": {
-        "39": 6,
-        "40": 7,
-        "41": 1,
-        "42": 0,
-        "43": 12,
-        "44": 7,
-        "45": 0,
-        "46": 0
-      },
-      "disponible": true,
-      "material": "Nobuk",
-      "descripcion": "Zapatillas Classic 80 de Nordwalk. Nobuk de primera calidad para un uso diario con buen acabado. Horma cómoda; si dudas entre dos tallas, te recomendamos la más grande. Disponible en azul marino.",
-      "caracteristicas": [
-        "Corte de nobuk",
-        "Suela de goma antideslizante",
-        "Plantilla de látex",
-        "Forro textil",
-        "Cierre de cordones",
-        "Refuerzo en talón"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-06-15"
-    },
-    {
       "id": "CR-0007",
       "referencia": "CR-0007",
-      "nombre": "Botines Plataforma",
-      "marca": "Vento",
+      "nombre": "Zapato confort sin costuras",
+      "marca": "Duvalí",
       "genero": "mujer",
-      "categoria": "botines",
-      "precio": 66.4,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": true,
-      "colores": [
-        {
-          "nombre": "Gris",
-          "hex": "#8a8f96"
-        },
-        {
-          "nombre": "Blanco",
-          "hex": "#f2f2ef"
-        },
-        {
-          "nombre": "Beige",
-          "hex": "#c9b79c"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 0,
-        "36": 2,
-        "37": 3,
-        "38": 2,
-        "39": 0,
-        "40": 1,
-        "41": 12,
-        "42": 2
-      },
-      "disponible": true,
-      "material": "Piel vegana",
-      "descripcion": "Botines Plataforma de Vento. Piel vegana de primera calidad para un uso diario con buen acabado. Horma ancha; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en gris, blanco, beige.",
-      "caracteristicas": [
-        "Corte de piel vegana",
-        "Suela EVA ligera",
-        "Plantilla acolchada extraíble",
-        "Forro sin costuras",
-        "Cierre con cremallera interior"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-06-06"
-    },
-    {
-      "id": "CR-0006",
-      "referencia": "CR-0006",
-      "nombre": "Zapatillas Trail",
-      "marca": "Ricardo",
-      "genero": "mujer",
-      "categoria": "zapatillas",
-      "precio": 74.62,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": true,
-      "colores": [
-        {
-          "nombre": "Rojo",
-          "hex": "#b12a2a"
-        },
-        {
-          "nombre": "Blanco",
-          "hex": "#f2f2ef"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 8,
-        "36": 5,
-        "37": 7,
-        "38": 0,
-        "39": 0,
-        "40": 8,
-        "41": 2,
-        "42": 0
-      },
-      "disponible": true,
-      "material": "Piel grabada",
-      "descripcion": "Zapatillas Trail de Ricardo. Piel grabada de primera calidad para un uso diario con buen acabado. Horma ancha; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en rojo, blanco.",
-      "caracteristicas": [
-        "Corte de piel grabada",
-        "Suela de goma antideslizante",
-        "Plantilla de látex",
-        "Forro de piel",
-        "Cierre de cordones",
-        "Refuerzo en talón"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1465479423260-c4afc24172c6?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-06-06"
-    },
-    {
-      "id": "CR-0015",
-      "referencia": "CR-0015",
-      "nombre": "Casual Slip-on",
-      "marca": "Maresía",
-      "genero": "hombre",
-      "categoria": "casual",
-      "precio": 52.21,
-      "precio_antes": 77.48,
-      "en_rebaja": true,
-      "destacado": false,
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 104.28,
+      "precio_texto": "104,28 €",
+      "destacado": true,
       "novedad": false,
+      "ancho": "Ancho especial (F)",
+      "cierre": "Cordones",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": true,
+      "material": "Neopreno",
       "colores": [
         {
-          "nombre": "Cuero",
-          "hex": "#b5854f"
-        }
-      ],
-      "tallas": [
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46
-      ],
-      "stock": {
-        "39": 0,
-        "40": 4,
-        "41": 5,
-        "42": 2,
-        "43": 0,
-        "44": 5,
-        "45": 0,
-        "46": 11
-      },
-      "disponible": true,
-      "material": "Piel grabada",
-      "descripcion": "Casual Slip-on de Maresía. Piel grabada de primera calidad para un uso diario con buen acabado. Horma estándar; si dudas entre dos tallas, te recomendamos la más grande. Disponible en cuero.",
-      "caracteristicas": [
-        "Corte de piel grabada",
-        "Suela track",
-        "Plantilla acolchada extraíble",
-        "Forro de piel"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1465479423260-c4afc24172c6?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-05-22"
-    },
-    {
-      "id": "CR-0012",
-      "referencia": "CR-0012",
-      "nombre": "Mocasines Borlas",
-      "marca": "Ricardo",
-      "genero": "hombre",
-      "categoria": "mocasines",
-      "precio": 72.16,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Blanco",
-          "hex": "#f2f2ef"
-        }
-      ],
-      "tallas": [
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46
-      ],
-      "stock": {
-        "39": 3,
-        "40": 7,
-        "41": 10,
-        "42": 7,
-        "43": 11,
-        "44": 9,
-        "45": 11,
-        "46": 11
-      },
-      "disponible": true,
-      "material": "Ante",
-      "descripcion": "Mocasines Borlas de Ricardo. Ante de primera calidad para un uso diario con buen acabado. Horma cómoda; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en blanco.",
-      "caracteristicas": [
-        "Corte de ante",
-        "Suela track",
-        "Plantilla de látex",
-        "Forro textil"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-05-08"
-    },
-    {
-      "id": "CR-0014",
-      "referencia": "CR-0014",
-      "nombre": "Botas Chukka",
-      "marca": "Kestrel",
-      "genero": "mujer",
-      "categoria": "botas",
-      "precio": 145.89,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": true,
-      "colores": [
-        {
-          "nombre": "Rojo",
-          "hex": "#b12a2a"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 8,
-        "36": 1,
-        "37": 0,
-        "38": 9,
-        "39": 8,
-        "40": 2,
-        "41": 10,
-        "42": 9
-      },
-      "disponible": true,
-      "material": "Nobuk",
-      "descripcion": "Botas Chukka de Kestrel. Nobuk de primera calidad para un uso diario con buen acabado. Horma ancha; si dudas entre dos tallas, te recomendamos la más grande. Disponible en rojo.",
-      "caracteristicas": [
-        "Corte de nobuk",
-        "Suela de cuero con antideslizante",
-        "Plantilla acolchada extraíble",
-        "Forro textil",
-        "Cierre con cremallera interior"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-05-06"
-    },
-    {
-      "id": "CR-0037",
-      "referencia": "CR-0037",
-      "nombre": "Botas Serraje alta",
-      "marca": "Lumen",
-      "genero": "niño",
-      "categoria": "botas",
-      "precio": 46.58,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Azul marino",
-          "hex": "#20304a"
+          "nombre": "Camel",
+          "hex": "#a9793f"
         },
-        {
-          "nombre": "Verde oliva",
-          "hex": "#5b5f43"
-        }
-      ],
-      "tallas": [
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38
-      ],
-      "stock": {
-        "28": 3,
-        "29": 9,
-        "30": 12,
-        "31": 1,
-        "32": 5,
-        "33": 3,
-        "34": 10,
-        "35": 1,
-        "36": 4,
-        "37": 0,
-        "38": 11
-      },
-      "disponible": true,
-      "material": "Piel vegana",
-      "descripcion": "Botas Serraje alta de Lumen. Piel vegana de primera calidad para un uso diario en el cole y el recreo. Horma cómoda; si dudas entre dos tallas, te recomendamos la más grande. Disponible en azul marino, verde oliva.",
-      "caracteristicas": [
-        "Corte de piel vegana",
-        "Suela de cuero con antideslizante",
-        "Plantilla transpirable",
-        "Forro sin costuras",
-        "Elásticos laterales"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1465479423260-c4afc24172c6?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-04-23"
-    },
-    {
-      "id": "CR-0021",
-      "referencia": "CR-0021",
-      "nombre": "Zapatillas Urban",
-      "marca": "Lumen",
-      "genero": "mujer",
-      "categoria": "zapatillas",
-      "precio": 82.15,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Cuero",
-          "hex": "#b5854f"
-        },
-        {
-          "nombre": "Burdeos",
-          "hex": "#5c2233"
-        },
-        {
-          "nombre": "Gris",
-          "hex": "#8a8f96"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 5,
-        "36": 7,
-        "37": 9,
-        "38": 0,
-        "39": 10,
-        "40": 4,
-        "41": 8,
-        "42": 12
-      },
-      "disponible": true,
-      "material": "Piel grabada",
-      "descripcion": "Zapatillas Urban de Lumen. Piel grabada de primera calidad para un uso diario con buen acabado. Horma estándar; si dudas entre dos tallas, te recomendamos la más grande. Disponible en cuero, burdeos, gris.",
-      "caracteristicas": [
-        "Corte de piel grabada",
-        "Suela de cuero con antideslizante",
-        "Plantilla acolchada extraíble",
-        "Forro textil",
-        "Cierre de cordones",
-        "Refuerzo en talón"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-04-18"
-    },
-    {
-      "id": "CR-0022",
-      "referencia": "CR-0022",
-      "nombre": "Sandalias Menorquina",
-      "marca": "Pisa 21",
-      "genero": "mujer",
-      "categoria": "sandalias",
-      "precio": 44.52,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": true,
-      "colores": [
-        {
-          "nombre": "Beige",
-          "hex": "#c9b79c"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 1,
-        "36": 3,
-        "37": 11,
-        "38": 3,
-        "39": 3,
-        "40": 7,
-        "41": 0,
-        "42": 7
-      },
-      "disponible": true,
-      "material": "Malla técnica",
-      "descripcion": "Sandalias Menorquina de Pisa 21. Malla técnica de primera calidad para un uso diario con buen acabado. Horma ancha; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en beige.",
-      "caracteristicas": [
-        "Corte de malla técnica",
-        "Suela EVA ligera",
-        "Plantilla de látex",
-        "Forro textil"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-04-05"
-    },
-    {
-      "id": "CR-0029",
-      "referencia": "CR-0029",
-      "nombre": "Botines Track",
-      "marca": "Kestrel",
-      "genero": "mujer",
-      "categoria": "botines",
-      "precio": 73.17,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Azul marino",
-          "hex": "#20304a"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 6,
-        "36": 9,
-        "37": 8,
-        "38": 5,
-        "39": 7,
-        "40": 10,
-        "41": 8,
-        "42": 1
-      },
-      "disponible": true,
-      "material": "Malla técnica",
-      "descripcion": "Botines Track de Kestrel. Malla técnica de primera calidad para un uso diario con buen acabado. Horma cómoda; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en azul marino.",
-      "caracteristicas": [
-        "Corte de malla técnica",
-        "Suela track",
-        "Plantilla de látex",
-        "Forro textil",
-        "Cierre con cremallera interior"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-04-03"
-    },
-    {
-      "id": "CR-0026",
-      "referencia": "CR-0026",
-      "nombre": "Deportivo Fútbol sala",
-      "marca": "Kestrel",
-      "genero": "niño",
-      "categoria": "deportivo",
-      "precio": 52.84,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Azul marino",
-          "hex": "#20304a"
-        },
-        {
-          "nombre": "Negro",
-          "hex": "#1a1a1a"
-        }
-      ],
-      "tallas": [
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38
-      ],
-      "stock": {
-        "28": 6,
-        "29": 4,
-        "30": 2,
-        "31": 1,
-        "32": 11,
-        "33": 10,
-        "34": 2,
-        "35": 12,
-        "36": 5,
-        "37": 6,
-        "38": 9
-      },
-      "disponible": true,
-      "material": "Serraje",
-      "descripcion": "Deportivo Fútbol sala de Kestrel. Serraje de primera calidad para un uso diario en el cole y el recreo. Horma cómoda; si dudas entre dos tallas, te recomendamos la más grande. Disponible en azul marino, negro.",
-      "caracteristicas": [
-        "Corte de serraje",
-        "Suela EVA ligera",
-        "Plantilla transpirable",
-        "Forro textil",
-        "Cierre de cordones",
-        "Refuerzo en talón"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-03-22"
-    },
-    {
-      "id": "CR-0032",
-      "referencia": "CR-0032",
-      "nombre": "Bailarinas Manoletina",
-      "marca": "Pisa 21",
-      "genero": "mujer",
-      "categoria": "bailarinas",
-      "precio": 41.56,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": true,
-      "colores": [
-        {
-          "nombre": "Negro",
-          "hex": "#1a1a1a"
-        },
-        {
-          "nombre": "Blanco",
-          "hex": "#f2f2ef"
-        },
-        {
-          "nombre": "Gris",
-          "hex": "#8a8f96"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 2,
-        "36": 2,
-        "37": 1,
-        "38": 4,
-        "39": 3,
-        "40": 1,
-        "41": 7,
-        "42": 7
-      },
-      "disponible": true,
-      "material": "Ante",
-      "descripcion": "Bailarinas Manoletina de Pisa 21. Ante de primera calidad para un uso diario con buen acabado. Horma ancha; si dudas entre dos tallas, te recomendamos la más grande. Disponible en negro, blanco, gris.",
-      "caracteristicas": [
-        "Corte de ante",
-        "Suela de cuero con antideslizante",
-        "Plantilla transpirable",
-        "Forro de piel"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-03-13"
-    },
-    {
-      "id": "CR-0024",
-      "referencia": "CR-0024",
-      "nombre": "Zapatillas Knit",
-      "marca": "Kestrel",
-      "genero": "hombre",
-      "categoria": "zapatillas",
-      "precio": 75.2,
-      "precio_antes": 106.19,
-      "en_rebaja": true,
-      "destacado": false,
-      "novedad": true,
-      "colores": [
-        {
-          "nombre": "Negro",
-          "hex": "#1a1a1a"
-        }
-      ],
-      "tallas": [
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46
-      ],
-      "stock": {
-        "39": 0,
-        "40": 1,
-        "41": 11,
-        "42": 1,
-        "43": 3,
-        "44": 1,
-        "45": 0,
-        "46": 6
-      },
-      "disponible": true,
-      "material": "Nobuk",
-      "descripcion": "Zapatillas Knit de Kestrel. Nobuk de primera calidad para un uso diario con buen acabado. Horma estándar; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en negro.",
-      "caracteristicas": [
-        "Corte de nobuk",
-        "Suela de cuero con antideslizante",
-        "Plantilla acolchada extraíble",
-        "Forro de piel",
-        "Cierre de cordones",
-        "Refuerzo en talón"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-03-13"
-    },
-    {
-      "id": "CR-0003",
-      "referencia": "CR-0003",
-      "nombre": "Casual Zapato confort",
-      "marca": "Pisa 21",
-      "genero": "hombre",
-      "categoria": "casual",
-      "precio": 66.6,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": true,
-      "colores": [
         {
           "nombre": "Marrón",
           "hex": "#6b4a2b"
-        },
-        {
-          "nombre": "Blanco",
-          "hex": "#f2f2ef"
         }
       ],
       "tallas": [
+        35,
+        36,
+        37,
+        38,
         39,
         40,
         41,
         42,
-        43,
-        44,
-        45,
-        46
-      ],
-      "stock": {
-        "39": 8,
-        "40": 2,
-        "41": 9,
-        "42": 3,
-        "43": 3,
-        "44": 2,
-        "45": 0,
-        "46": 12
-      },
-      "disponible": true,
-      "material": "Ante",
-      "descripcion": "Casual Zapato confort de Pisa 21. Ante de primera calidad para un uso diario con buen acabado. Horma ancha; si dudas entre dos tallas, te recomendamos la más grande. Disponible en marrón, blanco.",
-      "caracteristicas": [
-        "Corte de ante",
-        "Suela de goma antideslizante",
-        "Plantilla de látex",
-        "Forro textil"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1552346154-21d32810aba3?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-03-13"
-    },
-    {
-      "id": "CR-0033",
-      "referencia": "CR-0033",
-      "nombre": "Zapatillas Retro",
-      "marca": "Vento",
-      "genero": "mujer",
-      "categoria": "zapatillas",
-      "precio": 85.87,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Negro",
-          "hex": "#1a1a1a"
-        },
-        {
-          "nombre": "Blanco",
-          "hex": "#f2f2ef"
-        },
-        {
-          "nombre": "Rojo",
-          "hex": "#b12a2a"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
-      ],
-      "stock": {
-        "35": 1,
-        "36": 6,
-        "37": 0,
-        "38": 0,
-        "39": 3,
-        "40": 0,
-        "41": 9,
-        "42": 4
-      },
-      "disponible": true,
-      "material": "Textil reciclado",
-      "descripcion": "Zapatillas Retro de Vento. Textil reciclado de primera calidad para un uso diario con buen acabado. Horma ancha; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en negro, blanco, rojo.",
-      "caracteristicas": [
-        "Corte de textil reciclado",
-        "Suela EVA ligera",
-        "Plantilla transpirable",
-        "Forro sin costuras",
-        "Cierre de cordones",
-        "Refuerzo en talón"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-03-08"
-    },
-    {
-      "id": "CR-0009",
-      "referencia": "CR-0009",
-      "nombre": "Bailarinas Lazo",
-      "marca": "Pisa 21",
-      "genero": "mujer",
-      "categoria": "bailarinas",
-      "precio": 46.92,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": false,
-      "colores": [
-        {
-          "nombre": "Negro",
-          "hex": "#1a1a1a"
-        },
-        {
-          "nombre": "Verde oliva",
-          "hex": "#5b5f43"
-        }
-      ],
-      "tallas": [
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41,
-        42
+        43
       ],
       "stock": {
         "35": 0,
-        "36": 5,
-        "37": 3,
-        "38": 1,
+        "36": 8,
+        "37": 0,
+        "38": 6,
         "39": 2,
-        "40": 8,
-        "41": 7,
-        "42": 3
+        "40": 3,
+        "41": 4,
+        "42": 5,
+        "43": 6
       },
       "disponible": true,
-      "material": "Textil reciclado",
-      "descripcion": "Bailarinas Lazo de Pisa 21. Textil reciclado de primera calidad para un uso diario con buen acabado. Horma ancha; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en negro, verde oliva.",
+      "descripcion": "Zapato confort sin costuras de Duvalí. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma ancho especial (f). Disponible en camel, marrón. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
       "caracteristicas": [
-        "Corte de textil reciclado",
-        "Suela de goma antideslizante",
-        "Plantilla de látex",
-        "Forro textil"
+        "Corte de neopreno",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: cordones",
+        "Horma de ancho especial (f)",
+        "Interior sin costuras"
       ],
       "imagenes": [
-        "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=1000&h=1000&fit=crop&q=72"
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1582897085656-c636d006a246?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1543508282-6319a3e2621f?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72"
       ],
-      "imagen_principal": "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-03-03"
+      "imagen_principal": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-09-27"
     },
     {
       "id": "CR-0016",
       "referencia": "CR-0016",
-      "nombre": "Casual Slip-on",
-      "marca": "Maresía",
-      "genero": "hombre",
-      "categoria": "casual",
-      "precio": 80.39,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
-      "novedad": true,
-      "colores": [
-        {
-          "nombre": "Rojo",
-          "hex": "#b12a2a"
-        },
-        {
-          "nombre": "Verde oliva",
-          "hex": "#5b5f43"
-        }
-      ],
-      "tallas": [
-        39,
-        40,
-        41,
-        42,
-        43,
-        44,
-        45,
-        46
-      ],
-      "stock": {
-        "39": 0,
-        "40": 6,
-        "41": 1,
-        "42": 3,
-        "43": 5,
-        "44": 10,
-        "45": 4,
-        "46": 4
-      },
-      "disponible": true,
-      "material": "Lona",
-      "descripcion": "Casual Slip-on de Maresía. Lona de primera calidad para un uso diario con buen acabado. Horma estándar; si dudas entre dos tallas, te recomendamos la más grande. Disponible en rojo, verde oliva.",
-      "caracteristicas": [
-        "Corte de lona",
-        "Suela de cuero con antideslizante",
-        "Plantilla de látex",
-        "Forro textil"
-      ],
-      "imagenes": [
-        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=1000&h=1000&fit=crop&q=72"
-      ],
-      "imagen_principal": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-02-10"
-    },
-    {
-      "id": "CR-0028",
-      "referencia": "CR-0028",
-      "nombre": "Zapatillas Knit",
-      "marca": "Lumen",
+      "nombre": "Zapato confort cordón elástico",
+      "marca": "Doria",
       "genero": "mujer",
-      "categoria": "zapatillas",
-      "precio": 57.15,
-      "precio_antes": null,
-      "en_rebaja": false,
-      "destacado": false,
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 75.34,
+      "precio_texto": "75,34 €",
+      "destacado": true,
       "novedad": false,
+      "ancho": "Extra ancho (H)",
+      "cierre": "Cordones",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": true,
+      "material": "EVA inyectada",
       "colores": [
         {
-          "nombre": "Gris",
-          "hex": "#8a8f96"
+          "nombre": "Cuero",
+          "hex": "#b5854f"
         }
       ],
       "tallas": [
@@ -2369,59 +161,617 @@ window.CR_DB = {
         39,
         40,
         41,
-        42
+        42,
+        43
       ],
       "stock": {
-        "35": 4,
-        "36": 12,
-        "37": 7,
-        "38": 1,
-        "39": 1,
-        "40": 6,
-        "41": 5,
-        "42": 6
+        "35": 9,
+        "36": 0,
+        "37": 4,
+        "38": 4,
+        "39": 2,
+        "40": 0,
+        "41": 4,
+        "42": 9,
+        "43": 4
       },
       "disponible": true,
-      "material": "Malla técnica",
-      "descripcion": "Zapatillas Knit de Lumen. Malla técnica de primera calidad para un uso diario con buen acabado. Horma ancha; si dudas entre dos tallas, te recomendamos la más grande. Disponible en gris.",
+      "descripcion": "Zapato confort cordón elástico de Doria. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma extra ancho (h). Disponible en cuero. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
       "caracteristicas": [
-        "Corte de malla técnica",
-        "Suela track",
-        "Plantilla de látex",
-        "Forro de piel",
-        "Cierre de cordones",
-        "Refuerzo en talón"
+        "Corte de eva inyectada",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: cordones",
+        "Horma de extra ancho (h)",
+        "Interior sin costuras"
       ],
       "imagenes": [
-        "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?w=1000&h=1000&fit=crop&q=72"
+        "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1582897085656-c636d006a246?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72"
       ],
-      "imagen_principal": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-01-26"
+      "imagen_principal": "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-09-20"
+    },
+    {
+      "id": "CR-0038",
+      "referencia": "CR-0038",
+      "nombre": "Zueco de trabajo hostelería",
+      "marca": "Ricardo",
+      "genero": "unisex",
+      "categoria": "zueco-trabajo",
+      "categoria_etiqueta": "Zueco de trabajo",
+      "precio": 52.73,
+      "precio_texto": "52,73 €",
+      "destacado": true,
+      "novedad": true,
+      "ancho": "Normal",
+      "cierre": "Sin cierre",
+      "plantilla_extraible": false,
+      "apto_plantillas": false,
+      "sin_costuras": false,
+      "material": "Neopreno",
+      "colores": [
+        {
+          "nombre": "Negro",
+          "hex": "#1a1a1a"
+        },
+        {
+          "nombre": "Blanco",
+          "hex": "#f2f2ef"
+        }
+      ],
+      "tallas": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "stock": {
+        "36": 9,
+        "37": 5,
+        "38": 9,
+        "39": 10,
+        "40": 0,
+        "41": 9,
+        "42": 9,
+        "43": 5,
+        "44": 5,
+        "45": 8,
+        "46": 10
+      },
+      "disponible": true,
+      "descripcion": "Zueco de trabajo hostelería de Ricardo. Pensado para estar de pie muchas horas: ligero, antideslizante y fácil de limpiar. Horma normal. Disponible en negro, blanco. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de neopreno",
+        "Plantilla fija acolchada",
+        "Plantilla anatómica de serie",
+        "Piso flexible y ligero",
+        "Cierre: sin cierre",
+        "Suela antideslizante certificada SRC",
+        "Fácil de limpiar"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-08-20"
+    },
+    {
+      "id": "CR-0004",
+      "referencia": "CR-0004",
+      "nombre": "Zapato confort ligero",
+      "marca": "Sanícalz",
+      "genero": "hombre",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 84.9,
+      "precio_texto": "84,90 €",
+      "destacado": true,
+      "novedad": true,
+      "ancho": "Extra ancho (H)",
+      "cierre": "Elástico",
+      "plantilla_extraible": false,
+      "apto_plantillas": false,
+      "sin_costuras": true,
+      "material": "Piel lavable",
+      "colores": [
+        {
+          "nombre": "Negro",
+          "hex": "#1a1a1a"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 1,
+        "40": 3,
+        "41": 3,
+        "42": 3,
+        "43": 5,
+        "44": 0,
+        "45": 8,
+        "46": 8,
+        "47": 3
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort ligero de Sanícalz. Comodidad desde el primer día, sin periodo de adaptación. Horma extra ancho (h). Disponible en negro. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel lavable",
+        "Plantilla fija acolchada",
+        "Plantilla anatómica de serie",
+        "Piso flexible y ligero",
+        "Cierre: elástico",
+        "Horma de extra ancho (h)",
+        "Interior sin costuras"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-07-15"
+    },
+    {
+      "id": "CR-0020",
+      "referencia": "CR-0020",
+      "nombre": "Zapato confort cordón elástico",
+      "marca": "PieLibre",
+      "genero": "mujer",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 77.49,
+      "precio_texto": "77,49 €",
+      "destacado": true,
+      "novedad": false,
+      "ancho": "Normal",
+      "cierre": "Elástico",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "Neopreno",
+      "colores": [
+        {
+          "nombre": "Cuero",
+          "hex": "#b5854f"
+        },
+        {
+          "nombre": "Beige",
+          "hex": "#c9b79c"
+        }
+      ],
+      "tallas": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "stock": {
+        "35": 6,
+        "36": 10,
+        "37": 5,
+        "38": 10,
+        "39": 9,
+        "40": 7,
+        "41": 5,
+        "42": 7,
+        "43": 7
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort cordón elástico de PieLibre. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma normal. Disponible en cuero, beige. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de neopreno",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: elástico"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-06-09"
+    },
+    {
+      "id": "CR-0005",
+      "referencia": "CR-0005",
+      "nombre": "Deportivo de paseo sin cordones",
+      "marca": "Sanícalz",
+      "genero": "hombre",
+      "categoria": "deportivo-confort",
+      "categoria_etiqueta": "Deportivo de paseo",
+      "precio": 73.54,
+      "precio_texto": "73,54 €",
+      "destacado": true,
+      "novedad": false,
+      "ancho": "Normal",
+      "cierre": "Velcro",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "EVA inyectada",
+      "colores": [
+        {
+          "nombre": "Burdeos",
+          "hex": "#5c2233"
+        },
+        {
+          "nombre": "Camel",
+          "hex": "#a9793f"
+        },
+        {
+          "nombre": "Azul marino",
+          "hex": "#20304a"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 2,
+        "40": 0,
+        "41": 5,
+        "42": 0,
+        "43": 0,
+        "44": 1,
+        "45": 0,
+        "46": 10,
+        "47": 0
+      },
+      "disponible": true,
+      "descripcion": "Deportivo de paseo sin cordones de Sanícalz. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma normal. Disponible en burdeos, camel, azul marino. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de eva inyectada",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: velcro"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1582897085656-c636d006a246?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-06-04"
     },
     {
       "id": "CR-0001",
       "referencia": "CR-0001",
-      "nombre": "Zapato de vestir Cordón liso",
-      "marca": "Lumen",
+      "nombre": "Zapato confort extensible",
+      "marca": "Confortan",
       "genero": "hombre",
-      "categoria": "zapato de vestir",
-      "precio": 77.2,
-      "precio_antes": 116.93,
-      "en_rebaja": true,
-      "destacado": false,
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 101.37,
+      "precio_texto": "101,37 €",
+      "destacado": true,
       "novedad": false,
+      "ancho": "Normal",
+      "cierre": "Velcro",
+      "plantilla_extraible": false,
+      "apto_plantillas": false,
+      "sin_costuras": false,
+      "material": "EVA inyectada",
       "colores": [
         {
           "nombre": "Gris",
           "hex": "#8a8f96"
         },
         {
-          "nombre": "Rojo",
-          "hex": "#b12a2a"
+          "nombre": "Camel",
+          "hex": "#a9793f"
+        },
+        {
+          "nombre": "Cuero",
+          "hex": "#b5854f"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 5,
+        "40": 2,
+        "41": 8,
+        "42": 9,
+        "43": 3,
+        "44": 5,
+        "45": 2,
+        "46": 5,
+        "47": 0
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort extensible de Confortan. Comodidad desde el primer día, sin periodo de adaptación. Horma normal. Disponible en gris, camel, cuero. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de eva inyectada",
+        "Plantilla fija acolchada",
+        "Plantilla anatómica de serie",
+        "Piso flexible y ligero",
+        "Cierre: velcro"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1543508282-6319a3e2621f?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-06-03"
+    },
+    {
+      "id": "CR-0033",
+      "referencia": "CR-0033",
+      "nombre": "Zapato confort cordón elástico",
+      "marca": "Sanícalz",
+      "genero": "mujer",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 75.33,
+      "precio_texto": "75,33 €",
+      "destacado": true,
+      "novedad": false,
+      "ancho": "Ancho especial (F)",
+      "cierre": "Cordones",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "Piel vegana",
+      "colores": [
+        {
+          "nombre": "Azul marino",
+          "hex": "#20304a"
+        },
+        {
+          "nombre": "Beige",
+          "hex": "#c9b79c"
+        },
+        {
+          "nombre": "Negro",
+          "hex": "#1a1a1a"
+        }
+      ],
+      "tallas": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "stock": {
+        "35": 0,
+        "36": 5,
+        "37": 0,
+        "38": 9,
+        "39": 2,
+        "40": 7,
+        "41": 7,
+        "42": 10,
+        "43": 7
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort cordón elástico de Sanícalz. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma ancho especial (f). Disponible en azul marino, beige, negro. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel vegana",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: cordones",
+        "Horma de ancho especial (f)"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1582897085656-c636d006a246?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-04-02"
+    },
+    {
+      "id": "CR-0040",
+      "referencia": "CR-0040",
+      "nombre": "Zapato confort extensible",
+      "marca": "Sanícalz",
+      "genero": "hombre",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 89.62,
+      "precio_texto": "89,62 €",
+      "destacado": true,
+      "novedad": false,
+      "ancho": "Normal",
+      "cierre": "Sin cierre",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": true,
+      "material": "EVA inyectada",
+      "colores": [
+        {
+          "nombre": "Azul marino",
+          "hex": "#20304a"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 6,
+        "40": 1,
+        "41": 0,
+        "42": 10,
+        "43": 6,
+        "44": 0,
+        "45": 0,
+        "46": 0,
+        "47": 4
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort extensible de Sanícalz. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma normal. Disponible en azul marino. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de eva inyectada",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: sin cierre",
+        "Interior sin costuras"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-03-23"
+    },
+    {
+      "id": "CR-0006",
+      "referencia": "CR-0006",
+      "nombre": "Zapato confort empeine alto",
+      "marca": "Doria",
+      "genero": "hombre",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 117.12,
+      "precio_texto": "117,12 €",
+      "destacado": true,
+      "novedad": true,
+      "ancho": "Normal",
+      "cierre": "Velcro",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": true,
+      "material": "Piel grabada",
+      "colores": [
+        {
+          "nombre": "Negro",
+          "hex": "#1a1a1a"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 9,
+        "40": 0,
+        "41": 5,
+        "42": 7,
+        "43": 4,
+        "44": 5,
+        "45": 5,
+        "46": 9,
+        "47": 6
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort empeine alto de Doria. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma normal. Disponible en negro. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel grabada",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: velcro",
+        "Interior sin costuras"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-02-16"
+    },
+    {
+      "id": "CR-0031",
+      "referencia": "CR-0031",
+      "nombre": "Zapatilla de casa botín de casa",
+      "marca": "Doria",
+      "genero": "hombre",
+      "categoria": "casa",
+      "categoria_etiqueta": "Zapatilla de casa",
+      "precio": 39.13,
+      "precio_texto": "39,13 €",
+      "destacado": true,
+      "novedad": false,
+      "ancho": "Extra ancho (H)",
+      "cierre": "Velcro",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "Piel grabada",
+      "colores": [
+        {
+          "nombre": "Cuero",
+          "hex": "#b5854f"
+        },
+        {
+          "nombre": "Azul marino",
+          "hex": "#20304a"
         },
         {
           "nombre": "Beige",
@@ -2436,34 +786,2053 @@ window.CR_DB = {
         43,
         44,
         45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 1,
+        "40": 9,
+        "41": 7,
+        "42": 4,
+        "43": 4,
+        "44": 10,
+        "45": 2,
+        "46": 9,
+        "47": 10
+      },
+      "disponible": true,
+      "descripcion": "Zapatilla de casa botín de casa de Doria. Para estar cómodo en casa sin renunciar a la sujeción. Admite tu plantilla ortopédica retirando la de serie. Horma extra ancho (h). Disponible en cuero, azul marino, beige. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel grabada",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: velcro",
+        "Horma de extra ancho (h)"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-01-21"
+    },
+    {
+      "id": "CR-0015",
+      "referencia": "CR-0015",
+      "nombre": "Zapatilla de casa de rizo",
+      "marca": "Sanícalz",
+      "genero": "mujer",
+      "categoria": "casa",
+      "categoria_etiqueta": "Zapatilla de casa",
+      "precio": 36.23,
+      "precio_texto": "36,23 €",
+      "destacado": true,
+      "novedad": false,
+      "ancho": "Normal",
+      "cierre": "Sin cierre",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "Neopreno",
+      "colores": [
+        {
+          "nombre": "Camel",
+          "hex": "#a9793f"
+        }
+      ],
+      "tallas": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "stock": {
+        "35": 7,
+        "36": 1,
+        "37": 0,
+        "38": 8,
+        "39": 7,
+        "40": 2,
+        "41": 9,
+        "42": 8,
+        "43": 8
+      },
+      "disponible": true,
+      "descripcion": "Zapatilla de casa de rizo de Sanícalz. Para estar cómodo en casa sin renunciar a la sujeción. Admite tu plantilla ortopédica retirando la de serie. Horma normal. Disponible en camel. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de neopreno",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: sin cierre"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1543508282-6319a3e2621f?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-01-18"
+    },
+    {
+      "id": "CR-0021",
+      "referencia": "CR-0021",
+      "nombre": "Zueco de trabajo sanitario",
+      "marca": "Doria",
+      "genero": "unisex",
+      "categoria": "zueco-trabajo",
+      "categoria_etiqueta": "Zueco de trabajo",
+      "precio": 57.62,
+      "precio_texto": "57,62 €",
+      "destacado": false,
+      "novedad": true,
+      "ancho": "Ancho especial (F)",
+      "cierre": "Correa trasera",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "Piel flor",
+      "colores": [
+        {
+          "nombre": "Beige",
+          "hex": "#c9b79c"
+        },
+        {
+          "nombre": "Azul marino",
+          "hex": "#20304a"
+        }
+      ],
+      "tallas": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
         46
       ],
       "stock": {
-        "39": 4,
-        "40": 11,
-        "41": 6,
-        "42": 5,
-        "43": 9,
-        "44": 10,
+        "36": 5,
+        "37": 1,
+        "38": 6,
+        "39": 5,
+        "40": 1,
+        "41": 8,
+        "42": 0,
+        "43": 1,
+        "44": 9,
         "45": 10,
-        "46": 0
+        "46": 9
       },
       "disponible": true,
-      "material": "Piel vegana",
-      "descripcion": "Zapato de vestir Cordón liso de Lumen. Piel vegana de primera calidad para un uso diario con buen acabado. Horma estándar; si dudas entre dos tallas, te recomendamos tu talla habitual. Disponible en gris, rojo, beige.",
+      "descripcion": "Zueco de trabajo sanitario de Doria. Pensado para estar de pie muchas horas: ligero, antideslizante y fácil de limpiar. Admite tu plantilla ortopédica retirando la de serie. Horma ancho especial (f). Disponible en beige, azul marino. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
       "caracteristicas": [
-        "Corte de piel vegana",
-        "Suela track",
-        "Plantilla acolchada extraíble",
-        "Forro textil"
+        "Corte de piel flor",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: correa trasera",
+        "Horma de ancho especial (f)",
+        "Suela antideslizante certificada SRC",
+        "Fácil de limpiar"
       ],
       "imagenes": [
-        "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=1000&h=1000&fit=crop&q=72",
-        "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=1000&h=1000&fit=crop&q=72"
+        "https://images.unsplash.com/photo-1543508282-6319a3e2621f?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=1000&h=1000&fit=crop&q=72"
       ],
-      "imagen_principal": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=1000&h=1000&fit=crop&q=72",
-      "fecha": "2026-01-11"
+      "imagen_principal": "https://images.unsplash.com/photo-1543508282-6319a3e2621f?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-09-13"
+    },
+    {
+      "id": "CR-0032",
+      "referencia": "CR-0032",
+      "nombre": "Deportivo de paseo plantilla memory",
+      "marca": "Ricardo",
+      "genero": "mujer",
+      "categoria": "deportivo-confort",
+      "categoria_etiqueta": "Deportivo de paseo",
+      "precio": 73.79,
+      "precio_texto": "73,79 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Normal",
+      "cierre": "Elástico",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": true,
+      "material": "Piel vegana",
+      "colores": [
+        {
+          "nombre": "Azul marino",
+          "hex": "#20304a"
+        },
+        {
+          "nombre": "Blanco",
+          "hex": "#f2f2ef"
+        },
+        {
+          "nombre": "Cuero",
+          "hex": "#b5854f"
+        }
+      ],
+      "tallas": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "stock": {
+        "35": 10,
+        "36": 1,
+        "37": 1,
+        "38": 10,
+        "39": 8,
+        "40": 6,
+        "41": 0,
+        "42": 9,
+        "43": 8
+      },
+      "disponible": true,
+      "descripcion": "Deportivo de paseo plantilla memory de Ricardo. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma normal. Disponible en azul marino, blanco, cuero. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel vegana",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: elástico",
+        "Interior sin costuras"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1582897085656-c636d006a246?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-08-20"
+    },
+    {
+      "id": "CR-0002",
+      "referencia": "CR-0002",
+      "nombre": "Sandalia anatómica cuña anatómica",
+      "marca": "Anatómic",
+      "genero": "hombre",
+      "categoria": "sandalia-anatomica",
+      "categoria_etiqueta": "Sandalia anatómica",
+      "precio": 56.33,
+      "precio_texto": "56,33 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Normal",
+      "cierre": "Hebilla",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "EVA inyectada",
+      "colores": [
+        {
+          "nombre": "Negro",
+          "hex": "#1a1a1a"
+        },
+        {
+          "nombre": "Burdeos",
+          "hex": "#5c2233"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 0,
+        "40": 5,
+        "41": 1,
+        "42": 4,
+        "43": 10,
+        "44": 4,
+        "45": 5,
+        "46": 3,
+        "47": 10
+      },
+      "disponible": true,
+      "descripcion": "Sandalia anatómica cuña anatómica de Anatómic. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma normal. Disponible en negro, burdeos. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de eva inyectada",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: hebilla",
+        "Lecho plantar anatómico"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-08-12"
+    },
+    {
+      "id": "CR-0012",
+      "referencia": "CR-0012",
+      "nombre": "Zapato confort cordón elástico",
+      "marca": "Ricardo",
+      "genero": "mujer",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 119.64,
+      "precio_texto": "119,64 €",
+      "destacado": false,
+      "novedad": true,
+      "ancho": "Normal",
+      "cierre": "Sin cierre",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": true,
+      "material": "Piel vegana",
+      "colores": [
+        {
+          "nombre": "Marrón",
+          "hex": "#6b4a2b"
+        },
+        {
+          "nombre": "Camel",
+          "hex": "#a9793f"
+        }
+      ],
+      "tallas": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "stock": {
+        "35": 0,
+        "36": 2,
+        "37": 6,
+        "38": 7,
+        "39": 9,
+        "40": 8,
+        "41": 10,
+        "42": 8,
+        "43": 6
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort cordón elástico de Ricardo. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma normal. Disponible en marrón, camel. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel vegana",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: sin cierre",
+        "Interior sin costuras"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1582897085656-c636d006a246?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-07-15"
+    },
+    {
+      "id": "CR-0003",
+      "referencia": "CR-0003",
+      "nombre": "Zapato para pies anchos horma extra ancha",
+      "marca": "Doria",
+      "genero": "hombre",
+      "categoria": "pies-anchos",
+      "categoria_etiqueta": "Zapato para pies anchos",
+      "precio": 74.37,
+      "precio_texto": "74,37 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Ancho especial (F)",
+      "cierre": "Cordones",
+      "plantilla_extraible": false,
+      "apto_plantillas": false,
+      "sin_costuras": false,
+      "material": "EVA inyectada",
+      "colores": [
+        {
+          "nombre": "Beige",
+          "hex": "#c9b79c"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 5,
+        "40": 0,
+        "41": 4,
+        "42": 6,
+        "43": 1,
+        "44": 8,
+        "45": 6,
+        "46": 3,
+        "47": 3
+      },
+      "disponible": true,
+      "descripcion": "Zapato para pies anchos horma extra ancha de Doria. Diseñado para pies anchos, juanetes y dedos en garra: sin costuras que rocen y con empeine que se adapta. Horma ancho especial (f). Disponible en beige. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de eva inyectada",
+        "Plantilla fija acolchada",
+        "Plantilla anatómica de serie",
+        "Piso flexible y ligero",
+        "Cierre: cordones",
+        "Horma de ancho especial (f)"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1582897085656-c636d006a246?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-07-14"
+    },
+    {
+      "id": "CR-0025",
+      "referencia": "CR-0025",
+      "nombre": "Zapato confort velcro doble",
+      "marca": "Doria",
+      "genero": "mujer",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 102.5,
+      "precio_texto": "102,50 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Normal",
+      "cierre": "Cordones",
+      "plantilla_extraible": false,
+      "apto_plantillas": true,
+      "sin_costuras": true,
+      "material": "Piel lavable",
+      "colores": [
+        {
+          "nombre": "Beige",
+          "hex": "#c9b79c"
+        }
+      ],
+      "tallas": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "stock": {
+        "35": 7,
+        "36": 0,
+        "37": 7,
+        "38": 0,
+        "39": 5,
+        "40": 5,
+        "41": 7,
+        "42": 0,
+        "43": 1
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort velcro doble de Doria. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma normal. Disponible en beige. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel lavable",
+        "Plantilla fija acolchada",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: cordones",
+        "Interior sin costuras"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1582897085656-c636d006a246?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-06-30"
+    },
+    {
+      "id": "CR-0035",
+      "referencia": "CR-0035",
+      "nombre": "Zapato confort cordón elástico",
+      "marca": "PieLibre",
+      "genero": "hombre",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 62.03,
+      "precio_texto": "62,03 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Normal",
+      "cierre": "Sin cierre",
+      "plantilla_extraible": false,
+      "apto_plantillas": false,
+      "sin_costuras": false,
+      "material": "Serraje",
+      "colores": [
+        {
+          "nombre": "Camel",
+          "hex": "#a9793f"
+        },
+        {
+          "nombre": "Cuero",
+          "hex": "#b5854f"
+        },
+        {
+          "nombre": "Blanco",
+          "hex": "#f2f2ef"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 8,
+        "40": 3,
+        "41": 9,
+        "42": 7,
+        "43": 7,
+        "44": 3,
+        "45": 7,
+        "46": 3,
+        "47": 0
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort cordón elástico de PieLibre. Comodidad desde el primer día, sin periodo de adaptación. Horma normal. Disponible en camel, cuero, blanco. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de serraje",
+        "Plantilla fija acolchada",
+        "Plantilla anatómica de serie",
+        "Piso flexible y ligero",
+        "Cierre: sin cierre"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1582897085656-c636d006a246?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-06-26"
+    },
+    {
+      "id": "CR-0030",
+      "referencia": "CR-0030",
+      "nombre": "Zapato de vestir cordón liso",
+      "marca": "PieLibre",
+      "genero": "mujer",
+      "categoria": "vestir",
+      "categoria_etiqueta": "Zapato de vestir",
+      "precio": 100.35,
+      "precio_texto": "100,35 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Extra ancho (H)",
+      "cierre": "Sin cierre",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "Piel lavable",
+      "colores": [
+        {
+          "nombre": "Negro",
+          "hex": "#1a1a1a"
+        },
+        {
+          "nombre": "Marrón",
+          "hex": "#6b4a2b"
+        },
+        {
+          "nombre": "Camel",
+          "hex": "#a9793f"
+        }
+      ],
+      "tallas": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "stock": {
+        "35": 3,
+        "36": 1,
+        "37": 0,
+        "38": 10,
+        "39": 2,
+        "40": 10,
+        "41": 0,
+        "42": 4,
+        "43": 7
+      },
+      "disponible": true,
+      "descripcion": "Zapato de vestir cordón liso de PieLibre. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma extra ancho (h). Disponible en negro, marrón, camel. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel lavable",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: sin cierre",
+        "Horma de extra ancho (h)"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-06-16"
+    },
+    {
+      "id": "CR-0017",
+      "referencia": "CR-0017",
+      "nombre": "Zapato para pies anchos sin puntera rígida",
+      "marca": "PieLibre",
+      "genero": "hombre",
+      "categoria": "pies-anchos",
+      "categoria_etiqueta": "Zapato para pies anchos",
+      "precio": 129.08,
+      "precio_texto": "129,08 €",
+      "destacado": false,
+      "novedad": true,
+      "ancho": "Ancho especial (F)",
+      "cierre": "Elástico",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": true,
+      "material": "Piel lavable",
+      "colores": [
+        {
+          "nombre": "Blanco",
+          "hex": "#f2f2ef"
+        },
+        {
+          "nombre": "Azul marino",
+          "hex": "#20304a"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 7,
+        "40": 3,
+        "41": 7,
+        "42": 0,
+        "43": 2,
+        "44": 4,
+        "45": 9,
+        "46": 3,
+        "47": 3
+      },
+      "disponible": true,
+      "descripcion": "Zapato para pies anchos sin puntera rígida de PieLibre. Diseñado para pies anchos, juanetes y dedos en garra: sin costuras que rocen y con empeine que se adapta. Admite tu plantilla ortopédica retirando la de serie. Horma ancho especial (f). Disponible en blanco, azul marino. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel lavable",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: elástico",
+        "Horma de ancho especial (f)",
+        "Interior sin costuras"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-06-15"
+    },
+    {
+      "id": "CR-0036",
+      "referencia": "CR-0036",
+      "nombre": "Zapato confort sin costuras",
+      "marca": "Sanícalz",
+      "genero": "hombre",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 67.22,
+      "precio_texto": "67,22 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Ancho especial (F)",
+      "cierre": "Elástico",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "Piel lavable",
+      "colores": [
+        {
+          "nombre": "Azul marino",
+          "hex": "#20304a"
+        },
+        {
+          "nombre": "Blanco",
+          "hex": "#f2f2ef"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 4,
+        "40": 8,
+        "41": 8,
+        "42": 6,
+        "43": 10,
+        "44": 0,
+        "45": 6,
+        "46": 8,
+        "47": 0
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort sin costuras de Sanícalz. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma ancho especial (f). Disponible en azul marino, blanco. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel lavable",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: elástico",
+        "Horma de ancho especial (f)"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-06-11"
+    },
+    {
+      "id": "CR-0009",
+      "referencia": "CR-0009",
+      "nombre": "Zapatilla de casa de rizo",
+      "marca": "Confortan",
+      "genero": "hombre",
+      "categoria": "casa",
+      "categoria_etiqueta": "Zapatilla de casa",
+      "precio": 30.43,
+      "precio_texto": "30,43 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Normal",
+      "cierre": "Velcro",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "Piel flor",
+      "colores": [
+        {
+          "nombre": "Negro",
+          "hex": "#1a1a1a"
+        },
+        {
+          "nombre": "Marrón",
+          "hex": "#6b4a2b"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 9,
+        "40": 10,
+        "41": 4,
+        "42": 2,
+        "43": 8,
+        "44": 2,
+        "45": 6,
+        "46": 8,
+        "47": 1
+      },
+      "disponible": true,
+      "descripcion": "Zapatilla de casa de rizo de Confortan. Para estar cómodo en casa sin renunciar a la sujeción. Admite tu plantilla ortopédica retirando la de serie. Horma normal. Disponible en negro, marrón. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel flor",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: velcro"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1543508282-6319a3e2621f?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1582897085656-c636d006a246?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1543508282-6319a3e2621f?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-06-06"
+    },
+    {
+      "id": "CR-0027",
+      "referencia": "CR-0027",
+      "nombre": "Zapato de vestir hebilla",
+      "marca": "Doria",
+      "genero": "hombre",
+      "categoria": "vestir",
+      "categoria_etiqueta": "Zapato de vestir",
+      "precio": 136.19,
+      "precio_texto": "136,19 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Ancho especial (F)",
+      "cierre": "Cordones",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "Piel grabada",
+      "colores": [
+        {
+          "nombre": "Beige",
+          "hex": "#c9b79c"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 9,
+        "40": 0,
+        "41": 6,
+        "42": 7,
+        "43": 6,
+        "44": 7,
+        "45": 8,
+        "46": 5,
+        "47": 5
+      },
+      "disponible": true,
+      "descripcion": "Zapato de vestir hebilla de Doria. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma ancho especial (f). Disponible en beige. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel grabada",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: cordones",
+        "Horma de ancho especial (f)"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1582897085656-c636d006a246?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-06-02"
+    },
+    {
+      "id": "CR-0028",
+      "referencia": "CR-0028",
+      "nombre": "Zueco de trabajo sanitario",
+      "marca": "PieLibre",
+      "genero": "unisex",
+      "categoria": "zueco-trabajo",
+      "categoria_etiqueta": "Zueco de trabajo",
+      "precio": 51.88,
+      "precio_texto": "51,88 €",
+      "destacado": false,
+      "novedad": true,
+      "ancho": "Normal",
+      "cierre": "Sin cierre",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "Neopreno",
+      "colores": [
+        {
+          "nombre": "Beige",
+          "hex": "#c9b79c"
+        },
+        {
+          "nombre": "Azul marino",
+          "hex": "#20304a"
+        },
+        {
+          "nombre": "Blanco",
+          "hex": "#f2f2ef"
+        }
+      ],
+      "tallas": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "stock": {
+        "36": 10,
+        "37": 0,
+        "38": 8,
+        "39": 10,
+        "40": 9,
+        "41": 7,
+        "42": 6,
+        "43": 0,
+        "44": 5,
+        "45": 3,
+        "46": 5
+      },
+      "disponible": true,
+      "descripcion": "Zueco de trabajo sanitario de PieLibre. Pensado para estar de pie muchas horas: ligero, antideslizante y fácil de limpiar. Admite tu plantilla ortopédica retirando la de serie. Horma normal. Disponible en beige, azul marino, blanco. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de neopreno",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: sin cierre",
+        "Suela antideslizante certificada SRC",
+        "Fácil de limpiar"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-05-20"
+    },
+    {
+      "id": "CR-0011",
+      "referencia": "CR-0011",
+      "nombre": "Zapato confort empeine alto",
+      "marca": "Anatómic",
+      "genero": "mujer",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 82.14,
+      "precio_texto": "82,14 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Ancho especial (F)",
+      "cierre": "Sin cierre",
+      "plantilla_extraible": true,
+      "apto_plantillas": false,
+      "sin_costuras": true,
+      "material": "Serraje",
+      "colores": [
+        {
+          "nombre": "Beige",
+          "hex": "#c9b79c"
+        },
+        {
+          "nombre": "Cuero",
+          "hex": "#b5854f"
+        },
+        {
+          "nombre": "Negro",
+          "hex": "#1a1a1a"
+        }
+      ],
+      "tallas": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "stock": {
+        "35": 2,
+        "36": 0,
+        "37": 2,
+        "38": 1,
+        "39": 8,
+        "40": 8,
+        "41": 8,
+        "42": 10,
+        "43": 9
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort empeine alto de Anatómic. Comodidad desde el primer día, sin periodo de adaptación. Horma ancho especial (f). Disponible en beige, cuero, negro. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de serraje",
+        "Plantilla extraíble",
+        "Plantilla anatómica de serie",
+        "Piso flexible y ligero",
+        "Cierre: sin cierre",
+        "Horma de ancho especial (f)",
+        "Interior sin costuras"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-05-20"
+    },
+    {
+      "id": "CR-0029",
+      "referencia": "CR-0029",
+      "nombre": "Zapato confort velcro doble",
+      "marca": "PieLibre",
+      "genero": "mujer",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 66.77,
+      "precio_texto": "66,77 €",
+      "destacado": false,
+      "novedad": true,
+      "ancho": "Extra ancho (H)",
+      "cierre": "Cordones",
+      "plantilla_extraible": true,
+      "apto_plantillas": false,
+      "sin_costuras": true,
+      "material": "Piel grabada",
+      "colores": [
+        {
+          "nombre": "Cuero",
+          "hex": "#b5854f"
+        }
+      ],
+      "tallas": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "stock": {
+        "35": 8,
+        "36": 7,
+        "37": 5,
+        "38": 10,
+        "39": 3,
+        "40": 2,
+        "41": 3,
+        "42": 4,
+        "43": 0
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort velcro doble de PieLibre. Comodidad desde el primer día, sin periodo de adaptación. Horma extra ancho (h). Disponible en cuero. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel grabada",
+        "Plantilla extraíble",
+        "Plantilla anatómica de serie",
+        "Piso flexible y ligero",
+        "Cierre: cordones",
+        "Horma de extra ancho (h)",
+        "Interior sin costuras"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1582897085656-c636d006a246?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1582897085656-c636d006a246?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-05-05"
+    },
+    {
+      "id": "CR-0037",
+      "referencia": "CR-0037",
+      "nombre": "Zueco de trabajo antideslizante SRC",
+      "marca": "Anatómic",
+      "genero": "unisex",
+      "categoria": "zueco-trabajo",
+      "categoria_etiqueta": "Zueco de trabajo",
+      "precio": 44.67,
+      "precio_texto": "44,67 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Extra ancho (H)",
+      "cierre": "Sin cierre",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "Neopreno",
+      "colores": [
+        {
+          "nombre": "Burdeos",
+          "hex": "#5c2233"
+        },
+        {
+          "nombre": "Azul marino",
+          "hex": "#20304a"
+        },
+        {
+          "nombre": "Camel",
+          "hex": "#a9793f"
+        }
+      ],
+      "tallas": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "stock": {
+        "36": 10,
+        "37": 0,
+        "38": 0,
+        "39": 7,
+        "40": 8,
+        "41": 2,
+        "42": 3,
+        "43": 8,
+        "44": 5,
+        "45": 3,
+        "46": 9
+      },
+      "disponible": true,
+      "descripcion": "Zueco de trabajo antideslizante SRC de Anatómic. Pensado para estar de pie muchas horas: ligero, antideslizante y fácil de limpiar. Admite tu plantilla ortopédica retirando la de serie. Horma extra ancho (h). Disponible en burdeos, azul marino, camel. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de neopreno",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: sin cierre",
+        "Horma de extra ancho (h)",
+        "Suela antideslizante certificada SRC",
+        "Fácil de limpiar"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-04-26"
+    },
+    {
+      "id": "CR-0039",
+      "referencia": "CR-0039",
+      "nombre": "Zapato para pies anchos horma extra ancha",
+      "marca": "Duvalí",
+      "genero": "mujer",
+      "categoria": "pies-anchos",
+      "categoria_etiqueta": "Zapato para pies anchos",
+      "precio": 77.17,
+      "precio_texto": "77,17 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Extra ancho (H)",
+      "cierre": "Cordones",
+      "plantilla_extraible": false,
+      "apto_plantillas": false,
+      "sin_costuras": true,
+      "material": "Textil elástico",
+      "colores": [
+        {
+          "nombre": "Azul marino",
+          "hex": "#20304a"
+        },
+        {
+          "nombre": "Gris",
+          "hex": "#8a8f96"
+        }
+      ],
+      "tallas": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "stock": {
+        "35": 9,
+        "36": 1,
+        "37": 3,
+        "38": 0,
+        "39": 9,
+        "40": 4,
+        "41": 1,
+        "42": 4,
+        "43": 1
+      },
+      "disponible": true,
+      "descripcion": "Zapato para pies anchos horma extra ancha de Duvalí. Diseñado para pies anchos, juanetes y dedos en garra: sin costuras que rocen y con empeine que se adapta. Horma extra ancho (h). Disponible en azul marino, gris. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de textil elástico",
+        "Plantilla fija acolchada",
+        "Plantilla anatómica de serie",
+        "Piso flexible y ligero",
+        "Cierre: cordones",
+        "Horma de extra ancho (h)",
+        "Interior sin costuras"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1543508282-6319a3e2621f?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-04-23"
+    },
+    {
+      "id": "CR-0023",
+      "referencia": "CR-0023",
+      "nombre": "Zapatilla de casa botín de casa",
+      "marca": "Doria",
+      "genero": "hombre",
+      "categoria": "casa",
+      "categoria_etiqueta": "Zapatilla de casa",
+      "precio": 35.31,
+      "precio_texto": "35,31 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Ancho especial (F)",
+      "cierre": "Velcro",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "Neopreno",
+      "colores": [
+        {
+          "nombre": "Negro",
+          "hex": "#1a1a1a"
+        },
+        {
+          "nombre": "Cuero",
+          "hex": "#b5854f"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 8,
+        "40": 6,
+        "41": 1,
+        "42": 3,
+        "43": 10,
+        "44": 3,
+        "45": 3,
+        "46": 6,
+        "47": 0
+      },
+      "disponible": true,
+      "descripcion": "Zapatilla de casa botín de casa de Doria. Para estar cómodo en casa sin renunciar a la sujeción. Admite tu plantilla ortopédica retirando la de serie. Horma ancho especial (f). Disponible en negro, cuero. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de neopreno",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: velcro",
+        "Horma de ancho especial (f)"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-04-18"
+    },
+    {
+      "id": "CR-0018",
+      "referencia": "CR-0018",
+      "nombre": "Zapato confort cordón elástico",
+      "marca": "Doria",
+      "genero": "hombre",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 123.49,
+      "precio_texto": "123,49 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Normal",
+      "cierre": "Velcro",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": true,
+      "material": "Piel grabada",
+      "colores": [
+        {
+          "nombre": "Burdeos",
+          "hex": "#5c2233"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 4,
+        "40": 0,
+        "41": 0,
+        "42": 0,
+        "43": 10,
+        "44": 9,
+        "45": 3,
+        "46": 2,
+        "47": 10
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort cordón elástico de Doria. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma normal. Disponible en burdeos. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel grabada",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: velcro",
+        "Interior sin costuras"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-04-17"
+    },
+    {
+      "id": "CR-0008",
+      "referencia": "CR-0008",
+      "nombre": "Zapato confort ligero",
+      "marca": "Anatómic",
+      "genero": "mujer",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 85.51,
+      "precio_texto": "85,51 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Extra ancho (H)",
+      "cierre": "Elástico",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": true,
+      "material": "Piel lavable",
+      "colores": [
+        {
+          "nombre": "Cuero",
+          "hex": "#b5854f"
+        },
+        {
+          "nombre": "Blanco",
+          "hex": "#f2f2ef"
+        },
+        {
+          "nombre": "Azul marino",
+          "hex": "#20304a"
+        }
+      ],
+      "tallas": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "stock": {
+        "35": 5,
+        "36": 5,
+        "37": 9,
+        "38": 0,
+        "39": 8,
+        "40": 5,
+        "41": 3,
+        "42": 9,
+        "43": 9
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort ligero de Anatómic. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma extra ancho (h). Disponible en cuero, blanco, azul marino. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel lavable",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: elástico",
+        "Horma de extra ancho (h)",
+        "Interior sin costuras"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-04-08"
+    },
+    {
+      "id": "CR-0034",
+      "referencia": "CR-0034",
+      "nombre": "Deportivo de paseo ultraligero",
+      "marca": "Anatómic",
+      "genero": "hombre",
+      "categoria": "deportivo-confort",
+      "categoria_etiqueta": "Deportivo de paseo",
+      "precio": 64.76,
+      "precio_texto": "64,76 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Ancho especial (F)",
+      "cierre": "Cordones",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "Piel grabada",
+      "colores": [
+        {
+          "nombre": "Cuero",
+          "hex": "#b5854f"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 1,
+        "40": 6,
+        "41": 6,
+        "42": 9,
+        "43": 2,
+        "44": 7,
+        "45": 3,
+        "46": 0,
+        "47": 6
+      },
+      "disponible": true,
+      "descripcion": "Deportivo de paseo ultraligero de Anatómic. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma ancho especial (f). Disponible en cuero. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel grabada",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: cordones",
+        "Horma de ancho especial (f)"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1582897085656-c636d006a246?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1603487742131-4160ec999306?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-03-12"
+    },
+    {
+      "id": "CR-0019",
+      "referencia": "CR-0019",
+      "nombre": "Zueco de trabajo autoclavable",
+      "marca": "Duvalí",
+      "genero": "unisex",
+      "categoria": "zueco-trabajo",
+      "categoria_etiqueta": "Zueco de trabajo",
+      "precio": 68,
+      "precio_texto": "68,00 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Normal",
+      "cierre": "Sin cierre",
+      "plantilla_extraible": false,
+      "apto_plantillas": false,
+      "sin_costuras": false,
+      "material": "Piel flor",
+      "colores": [
+        {
+          "nombre": "Gris",
+          "hex": "#8a8f96"
+        },
+        {
+          "nombre": "Camel",
+          "hex": "#a9793f"
+        },
+        {
+          "nombre": "Blanco",
+          "hex": "#f2f2ef"
+        }
+      ],
+      "tallas": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "stock": {
+        "36": 1,
+        "37": 8,
+        "38": 0,
+        "39": 9,
+        "40": 4,
+        "41": 9,
+        "42": 2,
+        "43": 0,
+        "44": 2,
+        "45": 3,
+        "46": 7
+      },
+      "disponible": true,
+      "descripcion": "Zueco de trabajo autoclavable de Duvalí. Pensado para estar de pie muchas horas: ligero, antideslizante y fácil de limpiar. Horma normal. Disponible en gris, camel, blanco. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel flor",
+        "Plantilla fija acolchada",
+        "Plantilla anatómica de serie",
+        "Piso flexible y ligero",
+        "Cierre: sin cierre",
+        "Suela antideslizante certificada SRC",
+        "Fácil de limpiar"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1582897085656-c636d006a246?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-03-09"
+    },
+    {
+      "id": "CR-0026",
+      "referencia": "CR-0026",
+      "nombre": "Zapato confort empeine alto",
+      "marca": "Anatómic",
+      "genero": "mujer",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 106.96,
+      "precio_texto": "106,96 €",
+      "destacado": false,
+      "novedad": true,
+      "ancho": "Normal",
+      "cierre": "Velcro",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "EVA inyectada",
+      "colores": [
+        {
+          "nombre": "Marrón",
+          "hex": "#6b4a2b"
+        }
+      ],
+      "tallas": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "stock": {
+        "35": 4,
+        "36": 1,
+        "37": 8,
+        "38": 5,
+        "39": 6,
+        "40": 7,
+        "41": 1,
+        "42": 9,
+        "43": 5
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort empeine alto de Anatómic. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma normal. Disponible en marrón. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de eva inyectada",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: velcro"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-03-06"
+    },
+    {
+      "id": "CR-0014",
+      "referencia": "CR-0014",
+      "nombre": "Zapato confort extensible",
+      "marca": "PieLibre",
+      "genero": "hombre",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 88.89,
+      "precio_texto": "88,89 €",
+      "destacado": false,
+      "novedad": true,
+      "ancho": "Extra ancho (H)",
+      "cierre": "Elástico",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": false,
+      "material": "Nobuk",
+      "colores": [
+        {
+          "nombre": "Gris",
+          "hex": "#8a8f96"
+        },
+        {
+          "nombre": "Azul marino",
+          "hex": "#20304a"
+        },
+        {
+          "nombre": "Burdeos",
+          "hex": "#5c2233"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 8,
+        "40": 5,
+        "41": 8,
+        "42": 8,
+        "43": 8,
+        "44": 3,
+        "45": 2,
+        "46": 10,
+        "47": 7
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort extensible de PieLibre. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma extra ancho (h). Disponible en gris, azul marino, burdeos. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de nobuk",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: elástico",
+        "Horma de extra ancho (h)"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1449505278894-297fdb3edbc1?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-02-11"
+    },
+    {
+      "id": "CR-0022",
+      "referencia": "CR-0022",
+      "nombre": "Zueco de trabajo hostelería",
+      "marca": "Anatómic",
+      "genero": "unisex",
+      "categoria": "zueco-trabajo",
+      "categoria_etiqueta": "Zueco de trabajo",
+      "precio": 53.41,
+      "precio_texto": "53,41 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Ancho especial (F)",
+      "cierre": "Sin cierre",
+      "plantilla_extraible": false,
+      "apto_plantillas": false,
+      "sin_costuras": false,
+      "material": "EVA inyectada",
+      "colores": [
+        {
+          "nombre": "Azul marino",
+          "hex": "#20304a"
+        },
+        {
+          "nombre": "Camel",
+          "hex": "#a9793f"
+        },
+        {
+          "nombre": "Beige",
+          "hex": "#c9b79c"
+        }
+      ],
+      "tallas": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ],
+      "stock": {
+        "36": 3,
+        "37": 5,
+        "38": 8,
+        "39": 4,
+        "40": 6,
+        "41": 7,
+        "42": 0,
+        "43": 9,
+        "44": 4,
+        "45": 7,
+        "46": 10
+      },
+      "disponible": true,
+      "descripcion": "Zueco de trabajo hostelería de Anatómic. Pensado para estar de pie muchas horas: ligero, antideslizante y fácil de limpiar. Horma ancho especial (f). Disponible en azul marino, camel, beige. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de eva inyectada",
+        "Plantilla fija acolchada",
+        "Plantilla anatómica de serie",
+        "Piso flexible y ligero",
+        "Cierre: sin cierre",
+        "Horma de ancho especial (f)",
+        "Suela antideslizante certificada SRC",
+        "Fácil de limpiar"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1560343090-f0409e92791a?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-02-02"
+    },
+    {
+      "id": "CR-0013",
+      "referencia": "CR-0013",
+      "nombre": "Zapatilla de casa botín de casa",
+      "marca": "PieLibre",
+      "genero": "mujer",
+      "categoria": "casa",
+      "categoria_etiqueta": "Zapatilla de casa",
+      "precio": 39.63,
+      "precio_texto": "39,63 €",
+      "destacado": false,
+      "novedad": true,
+      "ancho": "Extra ancho (H)",
+      "cierre": "Velcro",
+      "plantilla_extraible": false,
+      "apto_plantillas": false,
+      "sin_costuras": false,
+      "material": "Piel lavable",
+      "colores": [
+        {
+          "nombre": "Negro",
+          "hex": "#1a1a1a"
+        }
+      ],
+      "tallas": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "stock": {
+        "35": 9,
+        "36": 9,
+        "37": 5,
+        "38": 4,
+        "39": 3,
+        "40": 6,
+        "41": 5,
+        "42": 0,
+        "43": 7
+      },
+      "disponible": true,
+      "descripcion": "Zapatilla de casa botín de casa de PieLibre. Para estar cómodo en casa sin renunciar a la sujeción. Horma extra ancho (h). Disponible en negro. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de piel lavable",
+        "Plantilla fija acolchada",
+        "Plantilla anatómica de serie",
+        "Piso flexible y ligero",
+        "Cierre: velcro",
+        "Horma de extra ancho (h)"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-02-02"
+    },
+    {
+      "id": "CR-0024",
+      "referencia": "CR-0024",
+      "nombre": "Zapato confort empeine alto",
+      "marca": "Ricardo",
+      "genero": "mujer",
+      "categoria": "confort",
+      "categoria_etiqueta": "Zapato confort",
+      "precio": 101.52,
+      "precio_texto": "101,52 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Extra ancho (H)",
+      "cierre": "Cordones",
+      "plantilla_extraible": true,
+      "apto_plantillas": false,
+      "sin_costuras": true,
+      "material": "Serraje",
+      "colores": [
+        {
+          "nombre": "Beige",
+          "hex": "#c9b79c"
+        },
+        {
+          "nombre": "Gris",
+          "hex": "#8a8f96"
+        }
+      ],
+      "tallas": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "stock": {
+        "35": 3,
+        "36": 2,
+        "37": 0,
+        "38": 7,
+        "39": 6,
+        "40": 4,
+        "41": 9,
+        "42": 9,
+        "43": 5
+      },
+      "disponible": true,
+      "descripcion": "Zapato confort empeine alto de Ricardo. Comodidad desde el primer día, sin periodo de adaptación. Horma extra ancho (h). Disponible en beige, gris. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de serraje",
+        "Plantilla extraíble",
+        "Plantilla anatómica de serie",
+        "Piso flexible y ligero",
+        "Cierre: cordones",
+        "Horma de extra ancho (h)",
+        "Interior sin costuras"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1543508282-6319a3e2621f?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1531310197839-ccf54634509e?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-01-10"
+    },
+    {
+      "id": "CR-0010",
+      "referencia": "CR-0010",
+      "nombre": "Sandalia anatómica dos tiras",
+      "marca": "Sanícalz",
+      "genero": "hombre",
+      "categoria": "sandalia-anatomica",
+      "categoria_etiqueta": "Sandalia anatómica",
+      "precio": 67.72,
+      "precio_texto": "67,72 €",
+      "destacado": false,
+      "novedad": false,
+      "ancho": "Normal",
+      "cierre": "Velcro",
+      "plantilla_extraible": true,
+      "apto_plantillas": true,
+      "sin_costuras": true,
+      "material": "Nobuk",
+      "colores": [
+        {
+          "nombre": "Gris",
+          "hex": "#8a8f96"
+        }
+      ],
+      "tallas": [
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47
+      ],
+      "stock": {
+        "39": 3,
+        "40": 10,
+        "41": 7,
+        "42": 7,
+        "43": 0,
+        "44": 8,
+        "45": 7,
+        "46": 3,
+        "47": 7
+      },
+      "disponible": true,
+      "descripcion": "Sandalia anatómica dos tiras de Sanícalz. Comodidad desde el primer día, sin periodo de adaptación. Admite tu plantilla ortopédica retirando la de serie. Horma normal. Disponible en gris. Si dudas con la talla o el ancho, escríbenos antes de pedir.",
+      "caracteristicas": [
+        "Corte de nobuk",
+        "Plantilla extraíble",
+        "Apto para plantillas ortopédicas",
+        "Piso flexible y ligero",
+        "Cierre: velcro",
+        "Interior sin costuras",
+        "Lecho plantar anatómico"
+      ],
+      "imagenes": [
+        "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1520639888713-7851133b1ed0?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1543508282-6319a3e2621f?w=1000&h=1000&fit=crop&q=72",
+        "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=1000&h=1000&fit=crop&q=72"
+      ],
+      "imagen_principal": "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=1000&h=1000&fit=crop&q=72",
+      "fecha": "2026-01-02"
     }
   ]
 };

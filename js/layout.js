@@ -9,12 +9,23 @@
   var NOMBRE = "Calzados Ricardo";
 
   var NAV = [
-    { href: "tienda.html?genero=hombre", txt: "Hombre" },
-    { href: "tienda.html?genero=mujer", txt: "Mujer" },
-    { href: "tienda.html?genero=ni%C3%B1o", txt: "Niño" },
-    { href: "tienda.html?soloRebajas=1", txt: "Rebajas" },
-    { href: "tienda.html", txt: "Toda la tienda" },
-    { href: "nosotros.html", txt: "La tienda" },
+    { href: "index.html", txt: "Inicio" },
+    {
+      href: "tienda.html",
+      txt: "Productos",
+      sub: [
+        { href: "tienda.html", txt: "Todos los productos" },
+        { href: "tienda.html?soloDisponibles=1", txt: "Solo con stock" },
+        { href: "tienda.html?genero=hombre", txt: "Hombre" },
+        { href: "tienda.html?genero=mujer", txt: "Mujer" },
+        { href: "tienda.html?genero=unisex", txt: "Unisex" },
+        { href: "tienda.html?categoria=confort", txt: "Confort" },
+        { href: "tienda.html?categoria=pies-anchos", txt: "Pies anchos" },
+        { href: "tienda.html?categoria=vestir", txt: "Vestir" },
+        { href: "tienda.html?categoria=zueco-trabajo", txt: "Zuecos de trabajo" },
+      ],
+    },
+    { href: "nosotros.html", txt: "Sobre nosotros" },
   ];
 
   var actual = location.pathname.split("/").pop() || "index.html";
@@ -39,9 +50,28 @@
   function cabeceraHTML() {
     var enlaces = NAV.map(function (n) {
       var base = n.href.split("?")[0];
-      var activo = base === actual && location.search.indexOf(n.href.split("?")[1] || "@@") !== -1
-        ? ' aria-current="page"'
-        : "";
+      var activo = base === actual ? ' aria-current="page"' : "";
+      if (n.sub) {
+        var subHTML = n.sub
+          .map(function (s) {
+            return '<a href="' + s.href + '">' + s.txt + "</a>";
+          })
+          .join("");
+        return (
+          '<div class="nav__item">' +
+          '<a href="' +
+          n.href +
+          '"' +
+          activo +
+          ' aria-haspopup="true">' +
+          n.txt +
+          ' <span class="nav__caret">▾</span></a>' +
+          '<div class="nav__sub">' +
+          subHTML +
+          "</div>" +
+          "</div>"
+        );
+      }
       return '<a href="' + n.href + '"' + activo + ">" + n.txt + "</a>";
     }).join("");
 
@@ -81,26 +111,27 @@
       '<img class="pie__logo" src="assets/logo.svg" alt="' +
       NOMBRE +
       '" width="260" height="44">' +
-      "<p>Zapaterías en Zaragoza desde 1986. Calzado de marca para toda la familia, con asesoramiento de verdad.</p>" +
+      "<p>Zapatería especializada en calzado confort, para pies anchos y para plantillas ortopédicas. En Zaragoza desde 1925.</p>" +
       "</div>" +
-      "<div><h4>Tienda</h4><ul>" +
-      '<li><a href="tienda.html?genero=hombre">Hombre</a></li>' +
-      '<li><a href="tienda.html?genero=mujer">Mujer</a></li>' +
-      '<li><a href="tienda.html?genero=ni%C3%B1o">Niño</a></li>' +
-      '<li><a href="tienda.html?soloRebajas=1">Rebajas</a></li>' +
+      "<div><h4>Productos</h4><ul>" +
+      '<li><a href="tienda.html">Todos los productos</a></li>' +
+      '<li><a href="tienda.html?categoria=confort">Confort</a></li>' +
+      '<li><a href="tienda.html?categoria=pies-anchos">Pies anchos</a></li>' +
+      '<li><a href="tienda.html?categoria=zueco-trabajo">Zuecos de trabajo</a></li>' +
       '<li><a href="favoritos.html">Mis favoritos</a></li>' +
       "</ul></div>" +
       "<div><h4>Ayuda</h4><ul>" +
       '<li><a href="envios-devoluciones.html">Envíos y devoluciones</a></li>' +
-      '<li><a href="envios-devoluciones.html#tallas">Guía de tallas</a></li>' +
+      '<li><a href="envios-devoluciones.html#tallas">Guía de tallas y anchos</a></li>' +
       '<li><a href="contacto.html">Contacto</a></li>' +
-      '<li><a href="nosotros.html">Sobre la tienda</a></li>' +
+      '<li><a href="nosotros.html">Sobre nosotros</a></li>' +
       "</ul></div>" +
       "<div><h4>Contacto</h4><ul>" +
-      '<li><a href="tel:+34976000000">976 000 000</a></li>' +
+      '<li><a href="tel:+34876011809">876 011 809</a></li>' +
+      '<li>WhatsApp <a href="https://wa.me/34656429687">656 429 687</a></li>' +
       '<li><a href="mailto:hola@calzadosricardo.es">hola@calzadosricardo.es</a></li>' +
-      "<li>Calle de Alfonso I, 18<br>50003 Zaragoza</li>" +
-      "<li>L–S 10:00–20:30</li>" +
+      "<li>Coso 109<br>50001 Zaragoza</li>" +
+      "<li>L–V 10:30–13:30 y 17:30–20:30<br>S 10:30–13:30</li>" +
       "</ul></div>" +
       "</div>" +
       '<div class="pie__legal">' +
@@ -264,7 +295,21 @@
         toggle.setAttribute("aria-expanded", ab ? "true" : "false");
       });
       nav.addEventListener("click", function (e) {
-        if (e.target.tagName === "A") nav.classList.remove("abierta");
+        var enlace = e.target.closest && e.target.closest("a");
+        if (!enlace) return;
+        var item = enlace.parentElement;
+        // En móvil, el primer toque sobre "Productos" despliega el submenú.
+        if (
+          item &&
+          item.classList.contains("nav__item") &&
+          window.matchMedia("(max-width: 900px)").matches &&
+          !item.classList.contains("desplegado")
+        ) {
+          e.preventDefault();
+          item.classList.add("desplegado");
+          return;
+        }
+        nav.classList.remove("abierta");
       });
     }
 

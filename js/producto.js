@@ -99,13 +99,11 @@
 
       raiz.innerHTML =
         '<div class="contenedor ficha">' +
-        '<p class="ficha__migas"><a href="index.html">Inicio</a> · <a href="tienda.html?genero=' +
-        encodeURIComponent(p.genero) +
+        '<p class="ficha__migas"><a href="index.html">Inicio</a> · <a href="tienda.html">Productos</a> · <a href="tienda.html?categoria=' +
+        encodeURIComponent(p.categoria) +
         '">' +
-        cap(p.genero) +
-        "</a> · " +
-        esc(p.categoria) +
-        "</p>" +
+        esc(p.categoria_etiqueta || p.categoria) +
+        "</a></p>" +
         '<div class="ficha__cols">' +
         '<div class="ficha__galeria">' +
         galeria +
@@ -120,6 +118,15 @@
         '<div class="ficha__precio">' +
         CR.precioHTML(p) +
         "</div>" +
+        '<ul class="ficha__specs">' +
+        "<li><span>Ancho</span><b>" + esc(p.ancho || "Normal") + "</b></li>" +
+        "<li><span>Cierre</span><b>" + esc(p.cierre || "—") + "</b></li>" +
+        "<li><span>Plantilla</span><b>" +
+        (p.plantilla_extraible ? "Extraíble" : "Fija") +
+        (p.apto_plantillas ? " · apta ortopédicas" : "") +
+        "</b></li>" +
+        "<li><span>Material</span><b>" + esc(p.material || "—") + "</b></li>" +
+        "</ul>" +
         '<div class="selector">' +
         '<div class="selector__label"><span>Color: <b id="color-nombre">' +
         esc(estado.color) +
