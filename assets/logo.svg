@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 44" role="img" aria-label="Calzados Ricardo">
+  <path d="M4 30c0-2 .8-4.5 2.4-4.5 2.4 0 3.2 2.3 6.4 2.3 4.8 0 7.2-4.6 12.8-4.6 6.4 0 10.4 3.8 10.4 6.9 0 1.6-.8 3-3.2 3H6.4C4.8 33.1 4 31.6 4 30Z" fill="#c0532e"/>
+  <text x="44" y="20" font-family="Poppins, Segoe UI, sans-serif" font-size="17" font-weight="700" fill="#211a15">CALZADOS</text>
+  <text x="44" y="38" font-family="Poppins, Segoe UI, sans-serif" font-size="17" font-weight="700" letter-spacing="3" fill="#c0532e">RICARDO</text>
+</svg>

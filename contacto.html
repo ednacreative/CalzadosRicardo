@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto · Calzados Ricardo</title>
+  <meta name="description" content="Contacta con Calzados Ricardo: dudas de talla, estado de un pedido o cualquier consulta. Tienda en Calle de Alfonso I, 18, Zaragoza.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header data-cabecera></header>
+
+  <div class="encabezado-pagina">
+    <div class="contenedor"><h1>Contacto</h1><p>Dudas de talla, estado de un pedido o cualquier consulta. Respondemos el mismo día laborable.</p></div>
+  </div>
+
+  <main class="seccion">
+    <div class="contenedor" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start">
+      <div>
+        <span class="antetitulo">Escríbenos</span>
+        <h2>¿En qué te ayudamos?</h2>
+        <form id="form-contacto">
+          <div class="form-campo"><label for="g-nombre">Nombre</label><input id="g-nombre" name="nombre" required></div>
+          <div class="form-campo"><label for="g-email">Email</label><input id="g-email" name="email" type="email" required></div>
+          <div class="form-campo"><label for="g-motivo">Motivo</label>
+            <select id="g-motivo" name="motivo">
+              <option value="talla">Duda de talla o producto</option>
+              <option value="pedido">Estado de mi pedido</option>
+              <option value="cambio">Cambio o devolución</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-campo"><label for="g-msg">Mensaje</label><textarea id="g-msg" name="mensaje" required></textarea></div>
+          <label style="display:flex;gap:.5rem;font-size:.85rem;color:var(--tinta-70);margin-bottom:1rem">
+            <input type="checkbox" required> He leído y acepto la política de privacidad.
+          </label>
+          <button class="btn btn--primario btn--bloque" type="submit">Enviar mensaje</button>
+        </form>
+        <div id="contacto-ok" class="aviso-ok oculto" style="margin-top:1rem"><strong>¡Mensaje enviado!</strong><br>Gracias por escribirnos, te contestamos en breve.</div>
+        <div id="contacto-error" class="aviso-error oculto"></div>
+      </div>
+      <div>
+        <span class="antetitulo">La tienda</span>
+        <h2>Dónde estamos</h2>
+        <p>
+          Calle de Alfonso I, 18<br>
+          50003 Zaragoza<br><br>
+          <strong>Teléfono / WhatsApp:</strong> <a href="tel:+34976000000">976 000 000</a><br>
+          <strong>Email:</strong> <a href="mailto:hola@calzadosricardo.es">hola@calzadosricardo.es</a><br><br>
+          <strong>Horario:</strong><br>
+          Lunes a sábado: 10:00–20:30<br>
+          Domingos: cerrado
+        </p>
+        <div id="mapa-tienda" style="height:300px;border-radius:var(--radio);overflow:hidden;border:1px solid var(--gris-200);margin-top:1rem"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer data-pie></footer>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="data/productos.js"></script>
+  <script src="js/favoritos.js"></script>
+  <script src="js/carrito.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/forms.js"></script>
+  <script src="js/layout.js"></script>
+  <script>
+    (function () {
+      var f = document.getElementById("form-contacto");
+      var ok = document.getElementById("contacto-ok");
+      var err = document.getElementById("contacto-error");
+      var MOT = { talla: "Duda de talla o producto", pedido: "Estado de mi pedido", cambio: "Cambio o devolución", otro: "Otro" };
+      if (f) f.addEventListener("submit", function (e) {
+        e.preventDefault();
+        var btn = f.querySelector('button[type="submit"]');
+        btn.disabled = true; btn.textContent = "Enviando…";
+        err.classList.add("oculto");
+        var motivo = MOT[f.motivo.value] || f.motivo.value;
+        var datos = {
+          "01. Nombre": f.nombre.value,
+          "02. Email": f.email.value,
+          "03. Motivo": motivo,
+          "04. Mensaje": f.mensaje.value
+        };
+        var fin = function () { btn.disabled = false; btn.textContent = "Enviar mensaje"; };
+        if (!window.CRForms) { fin(); f.classList.add("oculto"); ok.classList.remove("oculto"); return; }
+        window.CRForms.enviar(datos, { asunto: "✉️ Contacto web — " + motivo, replyTo: f.email.value,
+          autorespuesta: "Hola " + f.nombre.value + ",\n\nHemos recibido tu mensaje en Calzados Ricardo y te responderemos el mismo día laborable.\n\nUn saludo,\nCalzados Ricardo · 976 000 000" })
+          .then(function () {
+            f.classList.add("oculto"); ok.classList.remove("oculto");
+            window.scrollTo({ top: ok.getBoundingClientRect().top + window.scrollY - 120, behavior: "smooth" });
+          })
+          .catch(function (e2) {
+            fin();
+            err.innerHTML = "<strong>No se ha podido enviar.</strong><br>" + (e2 && e2.message ? e2.message + "<br>" : "") +
+              'Escríbenos a <a href="mailto:hola@calzadosricardo.es">hola@calzadosricardo.es</a> o al 976 000 000.';
+            err.classList.remove("oculto");
+          });
+      });
+      if (typeof L !== "undefined") {
+        var el = document.getElementById("mapa-tienda");
+        if (el) {
+          var m = L.map(el, { scrollWheelZoom: false }).setView([41.6522, -0.8797], 16);
+          L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "&copy; OpenStreetMap", maxZoom: 19 }).addTo(m);
+          L.marker([41.6522, -0.8797]).addTo(m).bindPopup("Calzados Ricardo<br>Calle de Alfonso I, 18");
+        }
+      }
+    })();
+  </script>
+</body>
+</html>
