@@ -110,9 +110,12 @@
       if (typeof L !== "undefined") {
         var el = document.getElementById("mapa-tienda");
         if (el) {
-          var m = L.map(el, { scrollWheelZoom: false }).setView([41.6503, -0.8792], 16);
+          // Coso 109, Zaragoza — coordenadas interpoladas a partir de los
+          // portales cercanos de OpenStreetMap (105 y 123 del Coso).
+          var TIENDA = [41.65102, -0.87572];
+          var m = L.map(el, { scrollWheelZoom: false }).setView(TIENDA, 17);
           L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "&copy; OpenStreetMap", maxZoom: 19 }).addTo(m);
-          L.marker([41.6503, -0.8792]).addTo(m).bindPopup("Calzados Ricardo<br>Coso 109, Zaragoza");
+          L.marker(TIENDA).addTo(m).bindPopup("Calzados Ricardo<br>Coso 109, 50001 Zaragoza").openPopup();
         }
       }
     })();
