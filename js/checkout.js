@@ -55,7 +55,7 @@
         "<h2 style=\"margin-top:1.5rem\">Entrega</h2>" +
         '<div class="form-campo"><label for="c-entrega">Método</label>' +
         '<select id="c-entrega" name="entrega"><option value="envio">Envío a domicilio</option>' +
-        '<option value="tienda">Recogida en tienda (Calle de Alfonso I, 18)</option></select></div>' +
+        '<option value="tienda">Recogida en tienda (Coso 109, 50001 Zaragoza)</option></select></div>' +
         '<div class="form-grid" id="dir-envio">' +
         campo("direccion", "Dirección", "text", true) +
         campo("cp", "Código postal", "text", true) +
